@@ -1,0 +1,2167 @@
+<!DOCTYPE html>
+<html class="ltr" dir="ltr" lang="en-GB">
+	<head>
+		<title>Programme - Web Audio Conference 2019 - NTNU</title>
+		<meta content="initial-scale=1.0, width=device-width" name="viewport" />
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="application-name" content="NTNU">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-title" content="NTNU">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700" rel="stylesheet" type="text/css">
+		<meta name="google-site-verification" content="MvmsXC06IWyb82SIuHjRFnJodYChvM7Vot7rt_2EcGk">
+		<script async src="https://umami.it.ntnu.no/script.js" data-website-id="c2d02892-c0b8-4056-8265-05f9e45f2f9a"></script>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta content="Programme for the 5th Annual Web Audio Conference at the Norwegian Science and Technology University (NTNU) in Trondheim, Norway" lang="en-GB" name="description" /><meta content=", wac, web audio conference, conference, trondheim, norway, javascript, web, audio, web audio, diversity in web audio, diversity, wac2019, web audio conference 2019" lang="en-GB" name="keywords" />
+<script data-senna-track="permanent" src="https://www.ntnu.edu/o/frontend-js-lodash-web/lodash/lodash.js" type="text/javascript"></script>
+<script data-senna-track="permanent" src="https://www.ntnu.edu/o/frontend-js-lodash-web/lodash/util.js" type="text/javascript"></script>
+<link href="https://www.ntnu.edu/o/ntnu-theme/images/logoicon.ico" rel="icon" />
+
+		
+			<link data-senna-track="temporary" href="https://www.ntnu.edu/nb/web/wac2019/programme" hreflang="nb-NO" rel="alternate" />
+
+		
+				<link data-senna-track="temporary" href="https://www.ntnu.edu/web/wac2019/programme" hreflang="x-default" rel="alternate" />
+		
+			<link data-senna-track="temporary" href="https://www.ntnu.edu/web/wac2019/programme" hreflang="en-GB" rel="alternate" />
+
+<link class="lfr-css-file" data-senna-track="temporary" href="https://www.ntnu.edu/o/ntnu-theme/css/clay.css?browserId=other&amp;themeId=ntnutheme_WAR_ntnutheme&amp;minifierType=css&amp;languageId=en_GB&amp;b=7110&amp;t=1732720022000" id="liferayAUICSS" rel="stylesheet" type="text/css" />
+<link data-senna-track="temporary" href="https://www.ntnu.edu/o/frontend-css-web/main.css?browserId=other&amp;themeId=ntnutheme_WAR_ntnutheme&amp;minifierType=css&amp;languageId=en_GB&amp;b=7110&amp;t=1732723538064" id="liferayPortalCSS" rel="stylesheet" type="text/css" />
+
+
+		<link data-senna-track="temporary" href="https://www.ntnu.edu/combo?browserId=other&amp;minifierType=&amp;themeId=ntnutheme_WAR_ntnutheme&amp;languageId=en_GB&amp;b=7110&amp;com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_tttmAXxhfhAl:%2Fcss%2Fmain.css&amp;com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_INSTANCE_templateSearch:%2Fsearch%2Fbar%2Fcss%2Fmain.css&amp;com_liferay_product_navigation_product_menu_web_portlet_ProductMenuPortlet:%2Fcss%2Fmain.css&amp;com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet:%2Fcss%2Fmain.css&amp;t=1732720022000" id="20b37073" rel="stylesheet" type="text/css" />
+
+<script data-senna-track="temporary" type="text/javascript">
+	// <![CDATA[
+		var Liferay = Liferay || {};
+		Liferay.Browser = {
+			acceptsGzip: function() {
+				return false;
+			},
+		
+			getMajorVersion: function() {
+				return 0;
+			},
+			getRevision: function() {
+				return '';
+			},
+			getVersion: function() {
+				return '';
+			},
+		
+			isAir: function() {
+				return false;
+			},
+			isChrome: function() {
+				return false;
+			},
+			isEdge: function() {
+				return false;
+			},
+			isFirefox: function() {
+				return false;
+			},
+			isGecko: function() {
+				return false;
+			},
+			isIe: function() {
+				return false;
+			},
+			isIphone: function() {
+				return false;
+			},
+			isLinux: function() {
+				return false;
+			},
+			isMac: function() {
+				return false;
+			},
+			isMobile: function() {
+				return false;
+			},
+			isMozilla: function() {
+				return false;
+			},
+			isOpera: function() {
+				return false;
+			},
+			isRtf: function() {
+				return false;
+			},
+			isSafari: function() {
+				return false;
+			},
+			isSun: function() {
+				return false;
+			},
+			isWebKit: function() {
+				return false;
+			},
+			isWindows: function() {
+				return false;
+			}
+		};
+		Liferay.Data = Liferay.Data || {};
+		Liferay.Data.ICONS_INLINE_SVG = true;
+		Liferay.Data.NAV_SELECTOR = '#navigation';
+		Liferay.Data.NAV_SELECTOR_MOBILE = '#navigationCollapse';
+		Liferay.Data.isCustomizationView = function() {
+			return false;
+		};
+		Liferay.Data.notices = [
+			null
+		
+		
+		];
+		Liferay.PortletKeys = {
+			DOCUMENT_LIBRARY: 'com_liferay_document_library_web_portlet_DLPortlet',
+			DYNAMIC_DATA_MAPPING: 'com_liferay_dynamic_data_mapping_web_portlet_DDMPortlet',
+			ITEM_SELECTOR: 'com_liferay_item_selector_web_portlet_ItemSelectorPortlet'
+		};
+		Liferay.PropsValues = {
+			JAVASCRIPT_SINGLE_PAGE_APPLICATION_TIMEOUT: 0,
+			NTLM_AUTH_ENABLED: false,
+			UPLOAD_SERVLET_REQUEST_IMPL_MAX_SIZE: 90085760000
+		};
+		Liferay.ThemeDisplay = {
+		
+		
+				getLayoutId: function() {
+					return '71';
+				},
+			
+				getLayoutRelativeControlPanelURL: function() {
+					return '/group/wac2019/~/control_panel/manage';
+				},
+				getLayoutRelativeURL: function() {
+					return '/web/wac2019/programme';
+				},
+				getLayoutURL: function() {
+					return 'https://www.ntnu.edu/web/wac2019/programme';
+				},
+				getParentLayoutId: function() {
+					return '66';
+				},
+				isControlPanel: function() {
+					return false;
+				},
+				isPrivateLayout: function() {
+					return 'false';
+				},
+				isVirtualLayout: function() {
+					return false;
+				},
+		
+			getBCP47LanguageId: function() {
+				return 'en-GB';
+			},
+			getCanonicalURL: function() {
+			
+				return 'https\x3a\x2f\x2fwww\x2entnu\x2eedu\x2fweb\x2fwac2019\x2fprogramme';
+			},
+			getCDNBaseURL: function() {
+				return 'https://www.ntnu.edu';
+			},
+			getCDNDynamicResourcesHost: function() {
+				return '';
+			},
+			getCDNHost: function() {
+				return '';
+			},
+			getCompanyGroupId: function() {
+				return '4941134';
+			},
+			getCompanyId: function() {
+				return '139202';
+			},
+			getDefaultLanguageId: function() {
+				return 'en_GB';
+			},
+			getDoAsUserIdEncoded: function() {
+				return '';
+			},
+			getLanguageId: function() {
+				return 'en_GB';
+			},
+			getParentGroupId: function() {
+				return '1282113268';
+			},
+			getPathContext: function() {
+				return '';
+			},
+			getPathImage: function() {
+				return '/image';
+			},
+			getPathJavaScript: function() {
+				return '/o/frontend-js-web';
+			},
+			getPathMain: function() {
+				return '/c';
+			},
+			getPathThemeImages: function() {
+				return 'https://www.ntnu.edu/o/ntnu-theme/images';
+			},
+			getPathThemeRoot: function() {
+				return '/o/ntnu-theme';
+			},
+			getPlid: function() {
+				return '1285431526';
+			},
+			getPortalURL: function() {
+				return 'https://www.ntnu.edu';
+			},
+			getScopeGroupId: function() {
+				return '1282113268';
+			},
+			getScopeGroupIdOrLiveGroupId: function() {
+				return '1282113268';
+			},
+			getSessionId: function() {
+				return '';
+			},
+			getSiteAdminURL: function() {
+				return 'https://www.ntnu.edu/group/wac2019/~/control_panel/manage?p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view';
+			},
+			getSiteGroupId: function() {
+				return '1282113268';
+			},
+			getURLControlPanel: function() {
+				return '/group/control_panel?refererPlid=1285431526';
+			},
+			getURLHome: function() {
+				return 'https\x3a\x2f\x2fwww\x2entnu\x2eedu\x2fweb\x2fguest';
+			},
+			getUserEmailAddress: function() {
+				return '';
+			},
+			getUserId: function() {
+				return '139205';
+			},
+			getUserName: function() {
+				return '';
+			},
+			isAddSessionIdToURL: function() {
+				return false;
+			},
+			isFreeformLayout: function() {
+				return false;
+			},
+			isImpersonated: function() {
+				return false;
+			},
+			isSignedIn: function() {
+				return false;
+			},
+			isStateExclusive: function() {
+				return false;
+			},
+			isStateMaximized: function() {
+				return false;
+			},
+			isStatePopUp: function() {
+				return false;
+			}
+		};
+		var themeDisplay = Liferay.ThemeDisplay;
+		Liferay.AUI = {
+		
+			getAvailableLangPath: function() {
+				return 'available_languages.jsp?browserId=other&themeId=ntnutheme_WAR_ntnutheme&colorSchemeId=01&minifierType=js&languageId=en_GB&b=7110&t=1732778899402';
+			},
+			getCombine: function() {
+				return true;
+			},
+			getComboPath: function() {
+				return '/combo/?browserId=other&minifierType=&languageId=en_GB&b=7110&t=1732723542573&';
+			},
+			getDateFormat: function() {
+				return '%d/%m/%Y';
+			},
+			getEditorCKEditorPath: function() {
+				return '/o/frontend-editor-ckeditor-web';
+			},
+			getFilter: function() {
+				var filter = 'raw';
+			
+				
+						filter = 'min';
+				
+				
+				return filter;
+			},
+			getFilterConfig: function() {
+				var instance = this;
+				var filterConfig = null;
+				if (!instance.getCombine()) {
+					filterConfig = {
+						replaceStr: '.js' + instance.getStaticResourceURLParams(),
+						searchExp: '\\.js$'
+					};
+				}
+				return filterConfig;
+			},
+			getJavaScriptRootPath: function() {
+				return '/o/frontend-js-web';
+			},
+			getLangPath: function() {
+				return 'aui_lang.jsp?browserId=other&themeId=ntnutheme_WAR_ntnutheme&colorSchemeId=01&minifierType=js&languageId=en_GB&b=7110&t=1732723542573';
+			},
+			getPortletRootPath: function() {
+				return '/html/portlet';
+			},
+			getStaticResourceURLParams: function() {
+				return '?browserId=other&minifierType=&languageId=en_GB&b=7110&t=1732723542573';
+			}
+		};
+		Liferay.authToken = 'FzpfKvju';
+	
+		Liferay.currentURL = '\x2fwac2019\x2fprogramme';
+		Liferay.currentURLEncoded = '\x252Fwac2019\x252Fprogramme';
+	// ]]>
+</script>
+
+	<script src="https://www.ntnu.edu/o/js_loader_modules?t=1732723556058" type="text/javascript"></script>
+<script src="https://www.ntnu.edu/o/js_loader_config?t=1732723556437" type="text/javascript"></script>
+<script data-senna-track="permanent" src="https://www.ntnu.edu/combo?browserId=other&amp;minifierType=js&amp;languageId=en_GB&amp;b=7110&amp;t=1732723542573&amp;/o/frontend-js-web/jquery/jquery.js&amp;/o/frontend-js-web/clay/popper.js&amp;/o/frontend-js-web/clay/bootstrap.js&amp;/o/frontend-js-web/aui/aui/aui.js&amp;/o/frontend-js-web/aui/aui-base-html5-shiv/aui-base-html5-shiv.js&amp;/o/frontend-js-web/liferay/browser_selectors.js&amp;/o/frontend-js-web/liferay/modules.js&amp;/o/frontend-js-web/liferay/aui_sandbox.js&amp;/o/frontend-js-web/clay/collapsible-search.js&amp;/o/frontend-js-web/clay/side-navigation.js&amp;/o/frontend-js-web/jquery/fm.js&amp;/o/frontend-js-web/jquery/form.js&amp;/o/frontend-js-web/misc/svg4everybody.js&amp;/o/frontend-js-web/aui/arraylist-add/arraylist-add.js&amp;/o/frontend-js-web/aui/arraylist-filter/arraylist-filter.js&amp;/o/frontend-js-web/aui/arraylist/arraylist.js&amp;/o/frontend-js-web/aui/array-extras/array-extras.js&amp;/o/frontend-js-web/aui/array-invoke/array-invoke.js&amp;/o/frontend-js-web/aui/attribute-base/attribute-base.js&amp;/o/frontend-js-web/aui/attribute-complex/attribute-complex.js&amp;/o/frontend-js-web/aui/attribute-core/attribute-core.js&amp;/o/frontend-js-web/aui/attribute-observable/attribute-observable.js&amp;/o/frontend-js-web/aui/attribute-extras/attribute-extras.js&amp;/o/frontend-js-web/aui/base-base/base-base.js&amp;/o/frontend-js-web/aui/base-pluginhost/base-pluginhost.js&amp;/o/frontend-js-web/aui/classnamemanager/classnamemanager.js&amp;/o/frontend-js-web/aui/datatype-xml-format/datatype-xml-format.js&amp;/o/frontend-js-web/aui/datatype-xml-parse/datatype-xml-parse.js&amp;/o/frontend-js-web/aui/dom-base/dom-base.js&amp;/o/frontend-js-web/aui/dom-core/dom-core.js&amp;/o/frontend-js-web/aui/dom-screen/dom-screen.js&amp;/o/frontend-js-web/aui/dom-style/dom-style.js&amp;/o/frontend-js-web/aui/event-base/event-base.js&amp;/o/frontend-js-web/aui/event-custom-base/event-custom-base.js&amp;/o/frontend-js-web/aui/event-custom-complex/event-custom-complex.js&amp;/o/frontend-js-web/aui/event-delegate/event-delegate.js&amp;/o/frontend-js-web/aui/event-focus/event-focus.js&amp;/o/frontend-js-web/aui/event-hover/event-hover.js" type="text/javascript"></script>
+<script data-senna-track="permanent" src="https://www.ntnu.edu/combo?browserId=other&amp;minifierType=js&amp;languageId=en_GB&amp;b=7110&amp;t=1732723542573&amp;/o/frontend-js-web/aui/event-key/event-key.js&amp;/o/frontend-js-web/aui/event-mouseenter/event-mouseenter.js&amp;/o/frontend-js-web/aui/event-mousewheel/event-mousewheel.js&amp;/o/frontend-js-web/aui/event-outside/event-outside.js&amp;/o/frontend-js-web/aui/event-resize/event-resize.js&amp;/o/frontend-js-web/aui/event-simulate/event-simulate.js&amp;/o/frontend-js-web/aui/event-synthetic/event-synthetic.js&amp;/o/frontend-js-web/aui/intl/intl.js&amp;/o/frontend-js-web/aui/io-base/io-base.js&amp;/o/frontend-js-web/aui/io-form/io-form.js&amp;/o/frontend-js-web/aui/io-queue/io-queue.js&amp;/o/frontend-js-web/aui/io-upload-iframe/io-upload-iframe.js&amp;/o/frontend-js-web/aui/io-xdr/io-xdr.js&amp;/o/frontend-js-web/aui/json-parse/json-parse.js&amp;/o/frontend-js-web/aui/json-stringify/json-stringify.js&amp;/o/frontend-js-web/aui/node-base/node-base.js&amp;/o/frontend-js-web/aui/node-core/node-core.js&amp;/o/frontend-js-web/aui/node-event-delegate/node-event-delegate.js&amp;/o/frontend-js-web/aui/node-event-simulate/node-event-simulate.js&amp;/o/frontend-js-web/aui/node-focusmanager/node-focusmanager.js&amp;/o/frontend-js-web/aui/node-pluginhost/node-pluginhost.js&amp;/o/frontend-js-web/aui/node-screen/node-screen.js&amp;/o/frontend-js-web/aui/node-style/node-style.js&amp;/o/frontend-js-web/aui/oop/oop.js&amp;/o/frontend-js-web/aui/plugin/plugin.js&amp;/o/frontend-js-web/aui/pluginhost-base/pluginhost-base.js&amp;/o/frontend-js-web/aui/pluginhost-config/pluginhost-config.js&amp;/o/frontend-js-web/aui/querystring-stringify-simple/querystring-stringify-simple.js&amp;/o/frontend-js-web/aui/queue-promote/queue-promote.js&amp;/o/frontend-js-web/aui/selector-css2/selector-css2.js&amp;/o/frontend-js-web/aui/selector-css3/selector-css3.js&amp;/o/frontend-js-web/aui/selector-native/selector-native.js&amp;/o/frontend-js-web/aui/selector/selector.js&amp;/o/frontend-js-web/aui/widget-base/widget-base.js&amp;/o/frontend-js-web/aui/widget-htmlparser/widget-htmlparser.js&amp;/o/frontend-js-web/aui/widget-skin/widget-skin.js" type="text/javascript"></script>
+<script data-senna-track="permanent" src="https://www.ntnu.edu/combo?browserId=other&amp;minifierType=js&amp;languageId=en_GB&amp;b=7110&amp;t=1732723542573&amp;/o/frontend-js-web/aui/widget-uievents/widget-uievents.js&amp;/o/frontend-js-web/aui/yui-throttle/yui-throttle.js&amp;/o/frontend-js-web/aui/aui-base-core/aui-base-core.js&amp;/o/frontend-js-web/aui/aui-base-lang/aui-base-lang.js&amp;/o/frontend-js-web/aui/aui-classnamemanager/aui-classnamemanager.js&amp;/o/frontend-js-web/aui/aui-component/aui-component.js&amp;/o/frontend-js-web/aui/aui-debounce/aui-debounce.js&amp;/o/frontend-js-web/aui/aui-delayed-task-deprecated/aui-delayed-task-deprecated.js&amp;/o/frontend-js-web/aui/aui-event-base/aui-event-base.js&amp;/o/frontend-js-web/aui/aui-event-input/aui-event-input.js&amp;/o/frontend-js-web/aui/aui-form-validator/aui-form-validator.js&amp;/o/frontend-js-web/aui/aui-node-base/aui-node-base.js&amp;/o/frontend-js-web/aui/aui-node-html5/aui-node-html5.js&amp;/o/frontend-js-web/aui/aui-selector/aui-selector.js&amp;/o/frontend-js-web/aui/aui-timer/aui-timer.js&amp;/o/frontend-js-web/liferay/dependency.js&amp;/o/frontend-js-web/liferay/dom_task_runner.js&amp;/o/frontend-js-web/liferay/events.js&amp;/o/frontend-js-web/liferay/language.js&amp;/o/frontend-js-web/liferay/lazy_load.js&amp;/o/frontend-js-web/liferay/liferay.js&amp;/o/frontend-js-web/liferay/util.js&amp;/o/frontend-js-web/liferay/global.bundle.js&amp;/o/frontend-js-web/liferay/portal.js&amp;/o/frontend-js-web/liferay/portlet.js&amp;/o/frontend-js-web/liferay/workflow.js&amp;/o/frontend-js-web/liferay/address.js&amp;/o/frontend-js-web/liferay/form.js&amp;/o/frontend-js-web/liferay/form_placeholders.js&amp;/o/frontend-js-web/liferay/icon.js&amp;/o/frontend-js-web/liferay/menu.js&amp;/o/frontend-js-web/liferay/notice.js&amp;/o/frontend-js-web/liferay/poller.js" type="text/javascript"></script>
+<script src="https://www.ntnu.edu/o/frontend-js-web/loader/config.js" type="text/javascript"></script>
+<script src="https://www.ntnu.edu/o/frontend-js-web/loader/loader.3.js" type="text/javascript"></script>
+
+	<script data-senna-track="temporary" src="https://www.ntnu.edu/o/js_bundle_config?t=1732723598206" type="text/javascript"></script>
+<script data-senna-track="temporary" type="text/javascript">
+	// <![CDATA[
+	
+		
+			
+	
+	
+	
+	// ]]>
+</script>
+
+	
+		
+		
+	
+
+	
+		
+		
+
+
+
+<link class="lfr-css-file" data-senna-track="temporary" href="https://www.ntnu.edu/o/ntnu-theme/css/main.css?browserId=other&amp;themeId=ntnutheme_WAR_ntnutheme&amp;minifierType=css&amp;languageId=en_GB&amp;b=7110&amp;t=1732720022000" id="liferayThemeCSS" rel="stylesheet" type="text/css" />
+	<style data-senna-track="temporary" type="text/css">
+		.minimal img.customerLogo {
+  padding-top: 0px;
+  height: 240px;
+}
+.minimal #dockComponent {
+  height: 240px;
+}
+	</style>
+	<style data-senna-track="temporary" type="text/css">
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+	</style>
+<link data-senna-track="permanent" href="https://www.ntnu.edu/combo?browserId=other&minifierType=css&languageId=en_GB&b=7110&t=1732723538382&/o/product-navigation-simulation-theme-contributor/css/simulation_panel.css&/o/product-navigation-product-menu-theme-contributor/product_navigation_product_menu.css&/o/product-navigation-control-menu-theme-contributor/product_navigation_control_menu.css" rel="stylesheet" type = "text/css" />
+<script data-senna-track="permanent" src="https://www.ntnu.edu/combo?browserId=other&minifierType=js&languageId=en_GB&b=7110&t=1732723538382&/o/product-navigation-control-menu-theme-contributor/product_navigation_control_menu.js" type = "text/javascript"></script>
+<script type="text/javascript">
+// <![CDATA[
+Liferay.on(
+	'ddmFieldBlur', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'fieldBlurred',
+				'Form',
+				{
+					fieldName: event.fieldName,
+					focusDuration: event.focusDuration,
+					formId: event.formId,
+					page: event.page - 1
+				}
+			);
+		}
+	}
+);
+Liferay.on(
+	'ddmFieldFocus', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'fieldFocused',
+				'Form',
+				{
+					fieldName: event.fieldName,
+					formId: event.formId,
+					page: event.page - 1
+				}
+			);
+		}
+	}
+);
+Liferay.on(
+	'ddmFormPageShow', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'pageViewed',
+				'Form',
+				{
+					formId: event.formId,
+					page: event.page,
+					title: event.title
+				}
+			);
+		}
+	}
+);
+Liferay.on(
+	'ddmFormSubmit', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'formSubmitted',
+				'Form',
+				{
+					formId: event.formId
+				}
+			);
+		}
+	}
+);
+Liferay.on(
+	'ddmFormView', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'formViewed',
+				'Form',
+				{
+					formId: event.formId,
+					title: event.title
+				}
+			);
+		}
+	}
+);
+// ]]>
+</script>
+<script data-senna-track="temporary" type="text/javascript">
+	if (window.Analytics) {
+		window._com_liferay_document_library_analytics_isViewFileEntry = false;
+	}
+</script>
+	</head>
+	<body class=" controls-visible  yui3-skin-sam signed-out public-page organization-site">
+	<nav class="quick-access-nav" id="buhw_quickAccessNav">
+		<h1 class="hide-accessible">Navigation</h1>
+		<ul>
+		
+				<li><a href="programme#main-content">Skip to Content</a></li>
+		
+		
+		</ul>
+	</nav>
+
+		<div class="mb-0 pt-0" id="wrapper">
+<header id="banner">
+	<div id="navigation" class="navbar navbar-classic navbar-expand-md navbar-light shadow-ntnu bgc-white light bgh-s">
+	    <div class="container">
+				<div class="d-flex justify-content-between">
+					<img id="header_logo" alt="NTNU Home" width="940px" src="https://www.ntnu.edu/documents/1282113268/1282945708/wac2019-header.jpg/3ff2a769-97de-64cf-94f1-893cf7b9a2e1?t=1573818902403" />
+				</div>
+    		<h1 class="sr-only">Web Audio Conference 2019</h1>
+	<div>
+		<button aria-controls="searchCollapse" aria-expanded="false" aria-label="Toggle search" class="navbar-toggler navbar-toggler-right" data-target="#searchCollapse" data-toggle="collapse" type="button">
+			<span class="search-toggler-icon"></span>
+		</button>
+		<button aria-controls="navigationCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right" data-target="#navigationCollapse" data-toggle="collapse" type="button">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	</div>
+	<div aria-expanded="false" class="collapse navbar-collapse" id="navigationCollapse">
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_  portlet-static portlet-static-end portlet-barebone portlet-navigation " id="p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_" >
+		<span id="p_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet"></span>
+
+	
+	
+	
+	
+<section class="portlet" id="portlet_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet">
+	<div class="portlet-content">
+	
+			<div class=" portlet-content-container" >
+			
+	<div class="portlet-body">
+
+	
+		
+			
+			
+			
+			
+				
+				
+
+
+	
+	<div id="navbar_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet">
+		<ul aria-label="Site Pages" class="nav navbar-nav navbar-site" role="menubar">
+					<li class="lfr-nav-item nav-item" id="layout_1" role="presentation">
+						<a aria-labelledby="layout_1"  class="nav-link text-truncate" href='..'  role="menuitem">
+							<span class="text-truncate"> Home </span>
+						</a>
+					</li>
+					<li class="lfr-nav-item nav-item" id="layout_65" role="presentation">
+						<a aria-labelledby="layout_65"  class="nav-link text-truncate" href='../for-authors'  role="menuitem">
+							<span class="text-truncate"> For Authors </span>
+						</a>
+					</li>					<li class="lfr-nav-item nav-item dropdown selected active" id="layout_66" role="presentation">
+						<a aria-labelledby="layout_66" aria-haspopup='true' class="nav-link text-truncate dropdown-toggle" href='../for-attendees'  role="menuitem">
+							<span class="text-truncate"> For Attendees 							<span class="lfr-nav-child-toggle">
+<span  id="qfkd____"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-angle-down" focusable="false" ><use data-href="https://www.ntnu.edu/o/ntnu-theme/images/lexicon/icons.svg#angle-down"></use></svg></span>							</span>
+</span>
+						</a>
+							<ul aria-expanded="false" class="child-menu dropdown-menu" role="menu">
+									<li class="" id="layout_31" role="presentation">
+										<a aria-labelledby="layout_31" class="dropdown-item" href="../coc"  role="menuitem">Code of Conduct</a>
+									</li>
+									<li class="active selected" id="layout_71" role="presentation">
+										<a aria-labelledby="layout_71" class="dropdown-item" href="../programme"  role="menuitem">Programme</a>
+									</li>
+									<li class="" id="layout_67" role="presentation">
+										<a aria-labelledby="layout_67" class="dropdown-item" href="../registration"  role="menuitem">Registration</a>
+									</li>
+									<li class="" id="layout_81" role="presentation">
+										<a aria-labelledby="layout_81" class="dropdown-item" href="../workshops"  role="menuitem">Workshops</a>
+									</li>
+									<li class="" id="layout_51" role="presentation">
+										<a aria-labelledby="layout_51" class="dropdown-item" href="../keynotes"  role="menuitem">Keynotes</a>
+									</li>
+									<li class="" id="layout_72" role="presentation">
+										<a aria-labelledby="layout_72" class="dropdown-item" href="../venues"  role="menuitem">Venues</a>
+									</li>
+							</ul>
+					</li>
+					<li class="lfr-nav-item nav-item" id="layout_63" role="presentation">
+						<a aria-labelledby="layout_63"  class="nav-link text-truncate" href='../sponsoring'  role="menuitem">
+							<span class="text-truncate"> Sponsoring </span>
+						</a>
+					</li>
+					<li class="lfr-nav-item nav-item" id="layout_62" role="presentation">
+						<a aria-labelledby="layout_62"  class="nav-link text-truncate" href='../diversity'  role="menuitem">
+							<span class="text-truncate"> Diversity </span>
+						</a>
+					</li>
+					<li class="lfr-nav-item nav-item" id="layout_41" role="presentation">
+						<a aria-labelledby="layout_41"  class="nav-link text-truncate" href='../about'  role="menuitem">
+							<span class="text-truncate"> About </span>
+						</a>
+					</li>
+		</ul>
+	</div>
+<script type="text/javascript">
+// <![CDATA[
+AUI().use('liferay-navigation-interaction', function(A) {(function() {var $ = AUI.$;var _ = AUI._;		var navigation = A.one('#navbar_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet');
+		Liferay.Data.NAV_INTERACTION_LIST_SELECTOR = '.navbar-site';
+		Liferay.Data.NAV_LIST_SELECTOR = '.navbar-site';
+		if (navigation) {
+			navigation.plug(Liferay.NavigationInteraction);
+		}
+})();});
+// ]]>
+</script>
+
+
+
+				
+			
+		
+
+
+	</div>
+			</div>
+	
+	</div>
+</section>
+
+	
+	
+	</div>
+	</div>
+		</div>
+	</div>
+
+	<nav id="breadcrumbs">
+		<div class="container">
+			<div class="d-flex flex-column flex-sm-row align-items-stretch container">
+				<nav class="ntnu-crumbs flex-grow w-100">
+
+	<div class="portlet-boundary portlet-boundary_ntnubreadcrumbportlet_WAR_ntnubreadcrumbportlet_  portlet-static portlet-static-end portlet-barebone  " id="p_p_id_ntnubreadcrumbportlet_WAR_ntnubreadcrumbportlet_INSTANCE_abcd_" >
+		<span id="p_ntnubreadcrumbportlet_WAR_ntnubreadcrumbportlet_INSTANCE_abcd"></span>
+
+	
+	
+	
+	
+<section class="portlet" id="portlet_ntnubreadcrumbportlet_WAR_ntnubreadcrumbportlet_INSTANCE_abcd">
+	<div class="portlet-content">
+	
+			<div class=" portlet-content-container" >
+			
+	<div class="portlet-body">
+
+	
+		
+			
+			
+			
+			
+				
+				
+	
+    
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item dropdown">
+                <a aria-label="Vis stien" aria-expanded="false" aria-haspopup="true" class="breadcrumb-link dropdown-toggle" data-toggle="dropdown" href="programme" id="breadcrumb2Dropdown1" role="button">
+                    <svg class="lexicon-icon lexicon-icon-ellipsis-h" focusable="false" role="presentation" viewBox="0 0 512 512">
+                        <path class="lexicon-icon-outline" d="M320 256c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-35.346 28.654-64 64-64s64 28.654 64 64z"/>
+                        <path class="lexicon-icon-outline" d="M128 256c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-35.346 28.654-64 64-64s64 28.654 64 64z"/>
+                        <path class="lexicon-icon-outline" d="M512 256c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-35.346 28.654-64 64-64s64 28.654 64 64z"/>
+                    </svg>
+                </a>
+                <div aria-labelledby="breadcrumb2Dropdown1" class="dropdown-menu">
+                    
+                    
+                        
+                            <a class="dropdown-item" href="..">Web Audio Conference 2019</a>
+                        
+                    
+                        
+                    
+                        
+                    
+                </div>
+            </li>
+            
+                
+            
+                
+                    
+                        
+                        
+                        
+                            <li class="breadcrumb-item">
+                                <a class="breadcrumb-link" href="for-attendees" title="For Attendees">
+                                    <span class="breadcrumb-text-truncate">For Attendees</span>
+                                </a>
+                            </li>
+                        
+                    
+                
+            
+                
+                    
+                        
+                            <li class="active breadcrumb-item">
+                                <span class="breadcrumb-text-truncate" title="Programme">Programme</span>
+                            </li>
+                        
+                        
+                        
+                    
+                
+            
+        </ol>
+    
+    
+
+				
+			
+		
+
+
+	</div>
+			</div>
+	
+	</div>
+</section>
+
+	
+	
+	</div>
+			</nav>
+				<div class="text-nowrap ntnu-langswitch">
+
+	<div class="portlet-boundary portlet-boundary_languageportlet_WAR_languageportlet_  portlet-static portlet-static-end portlet-borderless  " id="p_p_id_languageportlet_WAR_languageportlet_INSTANCE_abcd_" >
+		<span id="p_languageportlet_WAR_languageportlet_INSTANCE_abcd"></span>
+
+	
+	
+	
+	
+<section class="portlet" id="portlet_languageportlet_WAR_languageportlet_INSTANCE_abcd">
+	<div class="portlet-content">
+			<div class="autofit-float autofit-row portlet-header">
+					<div class="autofit-col autofit-col-expand">
+						<h2 class="portlet-title-text">Språkvelger</h2>
+					</div>
+			</div>
+	
+			<div class=" portlet-content-container" >
+			
+	<div class="portlet-body">
+
+	
+		
+			
+			
+			
+			
+				
+				
+		  
+<div id="language-portlet-portlet" style="font-size:0.875rem;padding:0.75rem 0.125rem;">
+  
+  
+</div>
+
+				
+			
+		
+
+
+	</div>
+			</div>
+	
+	</div>
+</section>
+
+	
+	
+	</div>
+					</div>
+			</div>
+		</div>
+	</nav>
+</header>
+			<section class="" id="content">
+				<h1 class="sr-only">Programme - Web Audio Conference 2019</h1><div id="main-content" class="columns-2-2-3-66-33-66-33x3" role="main">
+  <div class="container">
+    <div class="portlet-layout row mt-2">
+      <div class="portlet-column portlet-column-first col-md-8" id="top-column">
+        <div class="portlet-dropzone empty portlet-column-content portlet-column-content-first" id="layout-column_top-column"></div>
+      </div>
+      <div
+        class="portlet-column portlet-column-last col-md-4"
+        id="top-column-2"
+      >
+        <div class="portlet-dropzone empty portlet-column-content portlet-column-content-last" id="layout-column_top-column-2"></div>
+      </div>
+    </div>
+    <div class="portlet-layout row">
+      <div class="portlet-column portlet-column-first col-md-8" id="column-1">
+        <div class="portlet-dropzone portlet-column-content portlet-column-content-first" id="layout-column_column-1">
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-borderless portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_tttmAXxhfhAl_" >
+		<span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_tttmAXxhfhAl"></span>
+
+	
+	
+	
+	
+<section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_tttmAXxhfhAl">
+	<div class="portlet-content">
+			<div class="autofit-float autofit-row portlet-header">
+					<div class="autofit-col autofit-col-expand">
+						<h2 class="portlet-title-text">Proceedings &amp; Media</h2>
+					</div>
+					<div class="autofit-col autofit-col-end">
+						<div class="autofit-section">
+							<div class="visible-interaction">
+
+	
+	
+	
+
+</div>
+						</div>
+					</div>
+			</div>
+	
+			<div class=" portlet-content-container" >
+			
+	<div class="portlet-body">
+
+	
+		
+			
+			
+			
+			
+				
+				
+
+
+	
+		
+		
+			
+				
+				
+				
+				
+						<div class="text-right user-tool-asset-addon-entries">
+						
+						</div>
+						<div class="clearfix journal-content-article" data-analytics-asset-id="1292502687" data-analytics-asset-title="Proceedings &amp; Media" data-analytics-asset-type="web-content">
+
+	<h2>Proceedings &amp; Media</h2>
+<ul>
+	<li>For a compiled PDF book of the Conference Proceedings, visit <a href="https://dora.dmu.ac.uk/handle/2086/19781">Complete WAC 2019 Proceedings</a></li>
+	<li>For information about all the published WAC Conference Proceedings, visit <a href="http://webaudioconf.com/proceedings/">All-years WAC Proceedings</a></li>
+	<li>For video recordings of the presentations and performances at WAC 2019, visit <a href="https://www.youtube.com/playlist?list=PLQ9S5oqvpyWlo6DeiV43DFBMUWb1X22dV">WAC 2019 Video Playlist</a> on YouTube</li>
+	<li>For photos of WAC 2019, visit <a href="https://www.flickr.com/photos/197419608@N07/albums">WAC 2019 Photo Gallery</a> on Flickr</li>
+	<li>For the WAC 2019 Banquet Dinner Playlist from conference attendees and organized by Andreas Bergsland, visit <a href="https://open.spotify.com/playlist/16T4gxU0bzhhd4u887ij63?go=1&amp;sp_cid=f6e68fbde0599719ae92d71f97b2bd40&amp;utm_source=embed_player_p&amp;utm_medium=desktop&amp;nd=1">WAC 2019 Banquet Dinner Playlist</a> on Spotify</li>
+	<li>For information about the WAC 2019 logo, visit <a href="about#logo">WAC 2019 Logo</a></li>
+</ul>
+</div>
+					
+				
+			
+		
+
+	<div class="content-metadata-asset-addon-entries">
+	
+	</div>
+
+				
+			
+		
+
+
+	</div>
+			</div>
+	
+	</div>
+</section>
+
+	
+	
+	</div>
+	<div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-borderless portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_9QQqgkAe3J9G_" >
+		<span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_9QQqgkAe3J9G"></span>
+
+	
+	
+	
+	
+<section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_9QQqgkAe3J9G">
+	<div class="portlet-content">
+			<div class="autofit-float autofit-row portlet-header">
+					<div class="autofit-col autofit-col-expand">
+						<h2 class="portlet-title-text">Programme</h2>
+					</div>
+					<div class="autofit-col autofit-col-end">
+						<div class="autofit-section">
+							<div class="visible-interaction">
+
+	
+	
+	
+
+</div>
+						</div>
+					</div>
+			</div>
+	
+			<div class=" portlet-content-container" >
+			
+	<div class="portlet-body">
+
+	
+		
+			
+			
+			
+			
+				
+				
+
+
+	
+		
+		
+			
+				
+				
+				
+				
+						<div class="text-right user-tool-asset-addon-entries">
+						
+						</div>
+						<div class="clearfix journal-content-article" data-analytics-asset-id="1285430079" data-analytics-asset-title="Programme" data-analytics-asset-type="web-content">
+
+    <div class="tabbedArticle">
+    <h2>Programme</h2>
+    <ul class="nav nav-tabs">
+                            <li><a href="programme#t-1285430079-1">Tuesday 3 December</a></li>
+                    <li><a href="programme#t-1285430079-2">Wednesday 4 December</a></li>
+                    <li><a href="programme#t-1285430079-3">Thursday 5 December</a></li>
+                    <li><a href="programme#t-1285430079-4">Friday 6 December</a></li>
+                    <li><a href="programme#t-1285430079-5">Saturday 7 December - Off-conference</a></li>
+            </ul>
+    <div class="tab-content">
+                                            <div id="t-1285430079-1" class="tab-pane">
+                    <h2>Tuesday 3 December - Reception</h2>
+<table bgcolor="#FFFFFF" border="1" cellpadding="5" cellspacing="0" style="width:100%;">
+	<tbody>
+		<tr>
+			<td width="100px">
+			<p><strong><span style="font-size: 1.3em;">19:00</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em;">Welcome Reception&nbsp;&amp; Concert</strong></p>
+			<p><span style="background-color: transparent;">Location: <a href="https://goo.gl/maps/EkpvvRuTGz9kTuMK8">City Hall&nbsp;(</a></span><a href="https://goo.gl/maps/EkpvvRuTGz9kTuMK8">Rådhuset)</a> - Munkegata 1</p>
+			<p>Facilitator: Oeyvind Brandtsegg (NTNU)</p>
+			<p><em>Welcome </em>by&nbsp;Christianne Bauck Larssen (Trondheim Kommune) and Oeyvind Brandtsegg on behalf of Nora Bilalovic Kulset (Head of the Music Department, NTNU)</p>
+			<p>Concert: <em>GrainField</em>&nbsp;by Benjamin Matuszewski <span style="background-color: transparent;">(Ircam)&nbsp;</span>and Norbert Schnell (Furtwangen University). Performers: Daniel Formo (NTNU) and&nbsp;Ariane Stolfi&nbsp;(Federal University of South Bahia, Brazil)&nbsp;<span style="background-color: transparent;"><a href="https://youtu.be/Mig-dEtZHXA"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></p>
+			<p><em>Note</em>:&nbsp;There will be assorted finger food.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+                </div>
+                                                <div id="t-1285430079-2" class="tab-pane">
+                    <h2>Wednesday 4 December - Day 1 Conference</h2>
+<table bgcolor="#FFFFFF" border="1" cellpadding="5" cellspacing="0" style="width:100%;">
+	<tbody>
+		<tr>
+			<td width="100px">
+			<p><strong><span style="font-size: 1.3em">08:15-09:00</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em">Registration &amp; Morning Coffee</strong></p>
+			<p><span style="background-color: transparent;">Location: Outside R5 (Realfagbygget, Gløshaugen Campus)</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td width="100px">
+			<p><strong><span style="font-size: 1.3em">09:00-17:00</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em">Artworks</strong></p>
+			<p><span style="background-color: transparent;">Location: Rooms R92&nbsp;and R30&nbsp;(Realfagbygget, Gløshaugen Campus)</span></p>
+			<p><em>Generative.fm</em><span style="white-space:pre"> by </span>Alex Bainter (<span style="background-color: transparent;">R30</span>)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290817924/WAC2019-CameraReadySubmission-5.pdf/94ee9ecd-13c0-ada9-04bb-095ae1656b40?t=1575408761206"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a></span></p>
+			<p><em>Permutable</em><span style="white-space:pre"> by </span>Julian Woodward (Visual Systems Ltd)&nbsp;(<span style="background-color: transparent;">R30</span>)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290817924/WAC2019-CameraReadySubmission-9.pdf/a4e80e4f-1515-5ea8-30a1-5493f36148c3?t=1575408761486"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a></span></p>
+			<p><em>Wireplex, an Extended Flow of Data as Distributed Sound Sculpture</em><span style="white-space:pre"> by </span>Luis Arandas (Braga Media Arts), José Gomes (Portuguese Catholic University CITAR School of Arts, Braga Media Arts) and&nbsp;Rui Penha (<span style="background-color: transparent;">R92</span>)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290817924/WAC2019-CameraReadySubmission-45.pdf/37a46bba-e31b-3e09-e6a3-e56800333a58?t=1575408761925"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a></span></p>
+			<p><em>Acoustic Atlas</em><span style="white-space:pre"> by </span>Cobi van Tonder and&nbsp;Guergana Tzatchkova&nbsp;(<span style="background-color: transparent;">R92</span>)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290817924/WAC2019-CameraReadySubmission-50.pdf/9cbc8206-06e3-a561-33e7-b0315d20ff68?t=1575408762069"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong><span style="font-size: 1.3em;">09:00-11:00</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em">Papers &amp; Oral Talks</strong></p>
+			<p><strong style="font-size: 1.3em">Session 1: Music composition, live performance and live coding</strong></p>
+			<p>Location: R5 (Realfagbygget, Gløshaugen Campus)</p>
+			<p>Session chair:&nbsp;<span style="background-color: transparent;">Thor Magnusson (University of Sussex)</span></p>
+			<div><strong>09:00-09:20</strong> - <em>Composing Spatial Music with Web Audio and WebVR</em><span style="white-space:pre"> by </span><span style="background-color: transparent;">Cem Çakmak (Rensselaer Polytechnic Institute) and&nbsp;Rob Hamilton (Rensselaer Polytechnic Institute)&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797448/WAC2019-CameraReadySubmission-14.pdf/5ff6808c-8fbe-8246-ad4b-a486000a76e8?t=1575329702910"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/_JiRgQctDWE"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></div>
+			<div>&nbsp;</div>
+			<div><span style="background-color: transparent;"><strong>09:20-09:40</strong> - <em>Combining Collaborative and Content Filtering in a Recommendation System for a Web-based DAW</em></span><em><span style="background-color: transparent; white-space: pre;"> </span></em><span style="background-color: transparent; white-space: pre;">by </span><span style="background-color: transparent;">Jason Smith (Georgia Institute of Technology),&nbsp;Mikhail Jacob (Georgia Institute of Technology),&nbsp;Jason Freeman (Georgia Institute of Technology),&nbsp;Brian Magerko (Georgia Institute of Technology) and&nbsp;Tom Mcklin (The Findings Group)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797448/WAC2019-CameraReadySubmission-30.pdf/afd6bce6-7c9c-8ab6-f109-8a43f5659241?t=1575329712916"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/OPwnIRpihjw"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></div>
+			<div>&nbsp;</div>
+			<div><strong>09:40-10.00</strong> - <em>Sounds Aware: A Mobile App for Raising Awareness of Environmental Sound<span style="white-space: pre;">&nbsp;</span></em><span style="white-space: pre;">by </span><span style="background-color: transparent;">Tate Carson (Louisiana State University)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797448/WAC2019-CameraReadySubmission-12.pdf/293640dc-bd36-6d91-250c-7ac1af8a425f?t=1575329698144"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/4ZdOdbysd9c"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span>&nbsp;</span></div>
+			<div>&nbsp;</div>
+			<div><strong>10:00-10:20</strong> -&nbsp;<em>Connecting Web Audio to Cyber-Hacked Instruments in Performance</em> by&nbsp;<span style="background-color: transparent;">Anthony Marasco (Louisiana State University) and&nbsp;Jesse Allison (Louisiana State University)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797451/WAC2019-CameraReadySubmission-65.pdf/c8395e4f-83f0-c8ca-918a-3e29273f2d79?t=1575329794232"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/py6wQ07YyCE"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></div>
+			<div>&nbsp;</div>
+			<div><strong>10:20-10:40</strong>&nbsp;- <em>QuaverSeries: A Live Coding Environment for Music Performance Using Web Technologies</em><span style="white-space:pre"> by </span><span style="background-color: transparent;">Qichao Lan (University of Oslo) and&nbsp;Alexander Refsum Jensenius (University of Oslo)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797448/WAC2019-CameraReadySubmission-26.pdf/0b98ca2e-3c6f-469d-ba02-f647650e3906?t=1575329711938"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/1Oirap9_xMg"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></div>
+			<div>&nbsp;</div>
+			<div><strong>10:40-11:00</strong> - <em>Bringing the TidalCycles Mini-Language to the Web</em><span style="white-space:pre"> by </span><span style="background-color: transparent;">Charlie Roberts (Worcester Polytechnic Institute) and&nbsp;Mariana Pachón-Puentes (Worcester Polytechnic Institute)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797448/WAC2019-CameraReadySubmission-49.pdf/eadc2fee-7584-373e-31e6-79828b0b196a?t=1575329719278"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/FIptSmvA4Vo"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong><span style="font-size: 1.3em;">11:00-11:15</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em">Coffee &amp; Tea</strong></p>
+			<p><span style="background-color: transparent;">Location: Outside R5 (Realfagbygget, Gløshaugen Campus)</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong><span style="font-size: 1.3em;">11:15-12:35</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em">Papers &amp; Oral Talks</strong></p>
+			<p><strong style="font-size: 1.3em;">Session 2: Diversity and inclusion</strong></p>
+			<p>Location: R5 (Realfagbygget, Gløshaugen Campus)</p>
+			<p>Session chair: Tom Collins&nbsp;<span style="background-color: transparent;">(</span>University of York; MAIA, Inc.<span style="background-color: transparent;">)</span></p>
+			<div><strong>11:15-11:35</strong> - <em>From the museum to the browser: Translating a music-driven exhibit from physical space to a web app</em><span style="white-space:pre"> by </span><span style="background-color: transparent;">Astrid Bin (<span style="background-color: transparent;">Georgia Institute of Technology</span>),</span><span style="background-color: transparent;">&nbsp;Christina Bui (Georgia Institute of Technology),</span><span style="background-color: transparent;">&nbsp;Benjamin Genchel (Georgia Institute of Technology),</span><span style="background-color: transparent;">&nbsp;Kaushal Sali (Georgia Institute of Technology),</span><span style="background-color: transparent;">&nbsp;Brian Magerko (Georgia Institute of Technology) and</span><span style="background-color: transparent;">&nbsp;Jason Freeman (Georgia Institute of Technology)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797448/WAC2019-CameraReadySubmission-16.pdf/cce67819-02b1-1184-fb0e-40ac39b87863?t=1575329704826"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="16" /></a>&nbsp;<a href="https://youtu.be/Fd_4rtxbNag"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></div>
+			<div>&nbsp;</div>
+			<div><strong>11:35-11:55</strong> - <em>The application of Networked Music Performance technology to access ensemble activity for socially isolated musicians</em><span style="white-space:pre"> by </span><span style="background-color: transparent;">Miriam Iorwerth (University of the Highlands and Islands) and&nbsp;Don Knox (Glasgow Caledonian University)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797448/WAC2019-CameraReadySubmission-8.pdf/1bc3d35a-4edd-4ccf-d5b0-01cb7d33cc3e?t=1575329697561"><img alt="link to pdf" height="19" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/VLNVgo8Dq-E"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></div>
+			<div>&nbsp;</div>
+			<div><strong>11:55-12:15</strong>&nbsp;- <em>Opening the Dragon's Den: Interactive Welcome to Baton Rouge Entrepreneurship Week</em><span style="white-space:pre"> </span><span style="background-color: transparent;">by Jesse Allison (Louisiana State University) and&nbsp;Derick Ostrenko (Louisiana State University)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797451/WAC2019-CameraReadySubmission-62.pdf/1e83b1f2-e3b8-460c-27a0-5b6fc6bbc527?t=1575329792151"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/vxz0mjFCsqs"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></div>
+			<div>&nbsp;</div>
+			<div><strong>12:15-12:35</strong> - <em>Responsive Space. Liveness through spatial distribution of sound and image</em> by&nbsp;<span style="background-color: transparent;">Raimund Vogtenhuber (University of Arts Zurich / ICST)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797448/WAC2019-CameraReadySubmission-58.pdf/23e96cac-f237-0001-94fa-8b7de0b625a8?t=1575329719996"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/WctKn3cq-Yw"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong><span style="font-size: 1.3em;">12:35-13:30</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em">Lunch</strong></p>
+			<p><span style="background-color: transparent;">Location: SIT (Realfagbygget, Gløshaugen Campus)</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong><span style="font-size: 1.3em;">13:30-14:50</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em">Papers &amp; Oral Talks</strong></p>
+			<p><strong style="font-size: 1.3em;">Session 3: HCI and frameworks</strong></p>
+			<p>Location: R5 (Realfagbygget, Gløshaugen Campus)</p>
+			<p>Session chair: Cornelia Metzig&nbsp;<span style="background-color: transparent;">(Queen Mary University of London)</span></p>
+			<div><strong>13:30-13:50</strong> - <span style="background-color: transparent;"><em>Flexible visualization of sound collections</em> by Gerard Roma (University of Huddersfield)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797451/WAC2019-CameraReadySubmission-69.pdf/5962e682-2172-70a6-d6fd-4fb66ea0ca61?t=1575329795155"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/fsHEpF1P9A8"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></div>
+			<div>&nbsp;</div>
+			<div><strong>13:50-14:10</strong> -&nbsp; <em>Towards Large-Scale Artistic Practice with Web Technologies</em><span style="white-space:pre"> by </span><span style="background-color: transparent;">Luis Arandas (Braga Media Arts),&nbsp;José Gomes (Portuguese Catholic University CITAR School of Arts; Braga Media Arts) and&nbsp;Rui Penha<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797448/WAC2019-CameraReadySubmission-44.pdf/f3dc4e0d-e063-40cd-f901-145c273423b8?t=1575329718347"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/iY5CU--TIfA"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></div>
+			<div>&nbsp;</div>
+			<div><strong>14:10-14:30</strong>&nbsp;- <em>Creating a DJ-ready Web Player for Interactive Music</em><span style="white-space:pre"> by </span><span style="background-color: transparent;">Attila Haraszti<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797451/WAC2019-CameraReadySubmission-15.pdf/652d9b4c-bfcb-d077-89a4-b5b6588d1c7b?t=1575329783923"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/Fj5R0IrgTCU"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></div>
+			<div>&nbsp;</div>
+			<div><strong>14:30-14:50</strong> - <em>Soundworks - A Framework for Networked Music Systems on the Web - State of Affairs and New Developments</em> by&nbsp;<span style="background-color: transparent;">Benjamin Matuszewski (Ircam)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797448/WAC2019-CameraReadySubmission-35.pdf/787dac16-931c-1706-7352-de6e76b715a2?t=1575329714605"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/ksXq0zK-FCA"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong><span style="font-size: 1.3em;">14:50-15:00</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em">Coffee &amp; Tea</strong></p>
+			<p>Location: Outside R5 (Realfagbygget, Gløshaugen Campus)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong><span style="font-size: 1.3em;">15:00-17:00</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em;">Posters &amp; Demos</strong></p>
+			<p><strong style="font-size: 1.3em;">Session 1</strong></p>
+			<p>Location: Rooms R3 and&nbsp;R90&nbsp;(Realfagbygget, Gløshaugen Campus)</p>
+			<p><em style="background-color: transparent;">Synth Kitchen</em><span style="background-color: transparent; white-space: pre;"> by </span><span style="background-color: transparent;">Spencer Rudnick (Ableton) (R3)<span style="background-color: transparent;"><span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290817988/WAC2019-CameraReadySubmission-21.pdf/2baeb26f-e715-3b8d-55d7-8d4105121c41?t=1575408892378"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a></span></span></span></p>
+			<div><em style="background-color: transparent;">moodplay.github.io: an online collaborative music player</em><span style="background-color: transparent; white-space: pre;"> by </span><span style="background-color: transparent;">Alo Allik (Queen Mary University of London),&nbsp;Florian Thalmann (Queen Mary University of London) and&nbsp;Cornelia Metzig (Queen Mary University of London)&nbsp;<span style="background-color: transparent;">(R3)<span style="background-color: transparent;"><span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290817988/WAC2019-CameraReadySubmission-23.pdf/8960236e-9005-cbe4-52e1-820021b2caa3?t=1575408892965"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a></span></span></span></span></div>
+			<div>&nbsp;</div>
+			<div><em style="background-color: transparent;">Develop WebAudio Plugins in a Web Browser</em><span style="background-color: transparent; white-space: pre;"> by </span><span style="background-color: transparent;">Michel Buffa (Université Côte d’Azur, CNRS, INRIA),&nbsp;Stéphane Letz (Grame),&nbsp;Jerome Lebrun (CNRS),&nbsp;Yann Orlarey (GRAME),&nbsp;Romain Michon (Grame: Centre National de Création Musicale),&nbsp;Dominique Fober (GRAME),&nbsp;Shihong Ren (GRAME) and&nbsp;ElMehdi Aamari (I3S) (R90)<span style="background-color: transparent;"><span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290817988/WAC2019-CameraReadySubmission-32.pdf/9b920930-4dfa-c4c1-7581-217bf0ac1797?t=1575408893907"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a></span></span></span></div>
+			<div>&nbsp;</div>
+			<div><em style="background-color: transparent;">Cooperation experiments in web-based audiovisual work</em><span style="background-color: transparent;"> by Balázs Kovács (University of Pécs)&nbsp;<span style="background-color: transparent;">(R3)<span style="background-color: transparent;"><span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290818186/WAC2019-CameraReadySubmission-56.pdf/2cbec941-a049-55e6-e085-336c12de48c4?t=1575409276798"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a></span></span></span></span></div>
+			<div>&nbsp;</div>
+			<div>Showcase by: NTNU IES <span style="background-color: transparent;"><span style="background-color: transparent;">(R3)</span></span>, SonoSuite <span style="background-color: transparent;"><span style="background-color: transparent;">(R3)</span></span>, ROLI <span style="background-color: transparent;"><span style="background-color: transparent;">(R3)</span></span>, Ableton <span style="background-color: transparent;">(R90)</span>, Native Instruments <span style="background-color: transparent;">(R90)</span>, NTNU Institutt for Musikk&nbsp;<span style="background-color: transparent;">(R90) and Spotify&nbsp;<span style="background-color: transparent;">(R90)</span></span></div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong style="background-color: transparent;"><span style="font-size: 1.3em;">16:30</span></strong></p>
+			<p><strong style="background-color: transparent;"><span style="font-size: 1.3em;">17:15</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em"><em>Bus 1 to Rockheim (dinner &amp; concert venue)&nbsp;</em></strong></p>
+			<p><strong style="font-size: 1.5em"><em>Bus 2&nbsp;to Rockheim (dinner &amp; concert venue)</em></strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong style="background-color: transparent;"><span style="font-size: 1.3em;">17:00-</span></strong><strong style="background-color: transparent;"><span style="font-size: 1.3em;">19:00</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em"><em>Dinner (own expense)&nbsp;</em></strong></p>
+			<p>Location:&nbsp;<a href="https://www.google.com/maps?ll=63.438753,10.401607&amp;z=15&amp;t=m&amp;hl=en&amp;gl=NO&amp;mapclient=embed&amp;cid=2695759115069097947">Rockheim</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong><span style="font-size: 1.3em;">19:00-22:30</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="background-color: transparent; font-size: 1.5em;">Keynote &amp; Concert</strong></p>
+			<p>Location: <a href="https://www.google.com/maps?ll=63.438753,10.401607&amp;z=15&amp;t=m&amp;hl=en&amp;gl=NO&amp;mapclient=embed&amp;cid=2695759115069097947">Rockheim</a>&nbsp;</p>
+			<p>Facilitator: Oeyvind Brandtsegg (NTNU)</p>
+			<p><strong style="font-size: 1.5em;">19:00-19:45 </strong><strong style="font-size: 1.5em;">-</strong><strong style="font-size: 1.5em;">&nbsp;Performance Keynote:&nbsp;<em>Becoming Latency-Native</em>&nbsp;by Rebekah Wilson&nbsp;</strong><a href="https://www.ntnu.edu/documents/1282113268/1290470728/WAC2019-CameraReadySubmission-76.pdf/e622269e-8f06-89ca-6e66-e219feed2f07?version=1.0&amp;t=1573756258523&amp;download=true"><img alt="link to pdf" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" /></a>&nbsp;<a href="https://youtu.be/fPBByhhJFbw"><img alt="link to video" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" /></a></p>
+			<p><strong style="background-color: transparent; font-size: 1.5em;">Concert</strong></p>
+			<div><strong>20:00-20:15</strong> - <em>Responsive Space</em><span style="white-space:pre"> by </span>Raimund Vogtenhuber (University of Arts Zurich / ICST)<span style="background-color: transparent;"><span style="background-color: transparent;"><span style="background-color: transparent;"><span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290818078/WAC2019-CameraReadySubmission-59.pdf/98bededd-58ba-133f-c10f-8630efe540ad?t=1575409091104"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/Nq9-M36XMlU"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></span></span></div>
+			<div>&nbsp;</div>
+			<div>
+			<div><strong>20:25-20:35</strong> -&nbsp;<em>Cyclic Gibbering</em><span style="white-space:pre"> by </span>Charlie Roberts (Worcester Polytechnic Institute)<span style="background-color: transparent;"><span style="background-color: transparent;"><span style="background-color: transparent;"><span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290818078/WAC2019-CameraReadySubmission-53.pdf/c37a6200-bf38-7306-e5bb-aecc065ff503?t=1575409090788"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/eLwkaOK0G38"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></span></span></div>
+			<div>&nbsp;</div>
+			<div><strong>20:45-21:00</strong> -<em>gravity|density</em><span style="white-space:pre"> by </span>Anthony Marasco (Louisiana State University) and&nbsp;Jesse Allison (Louisiana State University)<span style="background-color: transparent;"><span style="background-color: transparent;"><span style="background-color: transparent;"><span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290818078/WAC2019-CameraReadySubmission-61.pdf/f1083eea-e7e2-b473-6ae8-2e2c555113f9?t=1575409091476"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/ZevQMrmeY3I"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></span></span></div>
+			<div>&nbsp;</div>
+			<div><strong>21:10-21:25</strong> - <em>Three Pidgins: Live Coding Performance</em><span style="white-space:pre"> by </span>Francisco Bernardo (University of Sussex),&nbsp;Chris Kiefer (University of Sussex) and&nbsp;Thor Magnusson (University of Sussex)<span style="background-color: transparent;"><span style="background-color: transparent;"><span style="background-color: transparent;"><span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290818078/WAC2019-CameraReadySubmission-41.pdf/648b23c7-8203-4b8b-6b6e-1b2df281c316?t=1575409090596"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/DRxBCabqsqA"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></span></span></div>
+			<div>&nbsp;</div>
+			<div><strong>21:35-21:50</strong>&nbsp;- <em>map mop</em><span style="white-space:pre"> by </span>Gerard Roma (University of Huddersfield)<span style="background-color: transparent;"><span style="background-color: transparent;"><span style="background-color: transparent;"><span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290818078/WAC2019-CameraReadySubmission-70.pdf/9958c947-4550-9a36-4a0d-b48a0b9d5214?t=1575409092033"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/Cwm_njSp1IQ"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></span></span></div>
+			<div>&nbsp;</div>
+			<div><strong>22:00-22:15</strong>&nbsp;- <em>Trondheim EMP Repository processing</em><span style="white-space:pre"> by </span>Oeyvind Brandtsegg (NTNU),&nbsp;Anna Xambó (NTNU),&nbsp;Trond Engum (NTNU),&nbsp;Andreas Bergsland (NTNU); Carl Haakon Waadeland (NTNU)<span style="background-color: transparent;"><span style="background-color: transparent;"><span style="background-color: transparent;"><span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290818078/WAC2019-CameraReadySubmission-55.pdf/0878fd86-0820-f178-27d6-e4a46d25b9fe?t=1575409090904"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/eRWb1zLYL88"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></span></span></div>
+			<div>&nbsp;</div>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>&nbsp;</p>
+                </div>
+                                                <div id="t-1285430079-3" class="tab-pane">
+                    <h2>Thursday 5 December - Day 2 conference<!--2--></h2>
+<table bgcolor="#FFFFFF" border="1" cellpadding="5" cellspacing="0" style="width:100%;">
+	<tbody>
+		<tr>
+			<td width="100px">
+			<p><strong><span style="font-size: 1.3em">08:15-09:00</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em">Registration &amp; Morning Coffee</strong></p>
+			<p><span style="background-color: transparent;">Location: Outside Realfagbygget, Gløshaugen Campus</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td width="100px">
+			<p><strong><span style="font-size: 1.3em">09:00-17:00</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em">Artworks</strong></p>
+			<p><span style="background-color: transparent;"></span><span style="background-color: transparent;">Location: Rooms R92&nbsp;and R30&nbsp;(Realfagbygget, Gløshaugen Campus)</span><span style="background-color: transparent;"></span></p>
+			<p><em>Generative.fm</em><span style="white-space:pre"> by </span>Alex Bainter (<span style="background-color: transparent;">R30</span>)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290817924/WAC2019-CameraReadySubmission-5.pdf/94ee9ecd-13c0-ada9-04bb-095ae1656b40?t=1575408761206"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a></span></p>
+			<p><em>Permutable</em><span style="white-space:pre"> by </span>Julian Woodward (Visual Systems Ltd)&nbsp;(<span style="background-color: transparent;">R30</span>)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290817924/WAC2019-CameraReadySubmission-9.pdf/a4e80e4f-1515-5ea8-30a1-5493f36148c3?t=1575408761486"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a></span></p>
+			<p><em>Wireplex, an Extended Flow of Data as Distributed Sound Sculpture</em><span style="white-space:pre"> by </span>Luis Arandas (Braga Media Arts), José Gomes (Portuguese Catholic University CITAR School of Arts, Braga Media Arts) and&nbsp;Rui Penha (<span style="background-color: transparent;">&gt;R92</span>)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290817924/WAC2019-CameraReadySubmission-45.pdf/37a46bba-e31b-3e09-e6a3-e56800333a58?t=1575408761925"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a></span></p>
+			<p><em>Acoustic Atlas</em><span style="white-space:pre"> by </span>Cobi van Tonder and&nbsp;Guergana Tzatchkova&nbsp;(<span style="background-color: transparent;">R92</span>)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290817924/WAC2019-CameraReadySubmission-50.pdf/9cbc8206-06e3-a561-33e7-b0315d20ff68?t=1575408762069"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong><span style="font-size: 1.3em;">09:00-11:00</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em">Keynote: <em>On our Past, Present, and Future with Web Audio Technologies – a participatory keynote address</em> by Norbert Schnell&nbsp;</strong><a href="https://www.ntnu.edu/documents/1282113268/1290470728/WAC2019-CameraReadySubmission-77.pdf/69dbd1e6-8314-6705-fea6-c484af91dcad?version=1.0&amp;t=1573756258885&amp;download=true"><img alt="link to pdf" height="31" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="24" /></a>&nbsp;<a href="https://youtu.be/9XK6Jp-66rY"><img alt="link to video" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" /></a></p>
+			<p>Location:&nbsp;R5&nbsp;(Realfagbygget, Gløshaugen Campus)</p>
+			<p>Facilitator: Sara Martin&nbsp;(NTNU)</p>
+			<p><strong style="font-size: 1.5em">Papers &amp; Oral Talks</strong></p>
+			<p><strong style="font-size: 1.3em;">Session 4: Audio processing and standards</strong></p>
+			<p>Location: R5 (Realfagbygget, Gløshaugen Campus)</p>
+			<p>Session chair: Gerard Roma&nbsp;<span style="background-color: transparent;">(University of Huddersfield)</span></p>
+			<p><strong>09:40-10:00</strong> -&nbsp;<em><span style="background-color: transparent;">FAUST online IDE: dynamically compile and publish FAUST code as WebAudio Plugins</span></em><span style="background-color: transparent; white-space: pre;"> by </span><span style="background-color: transparent;">Stéphane Letz (GRAME),&nbsp;Shihong Ren (GRAME),&nbsp;Yann Orlarey (GRAME),&nbsp;Romain Michon (GRAME),&nbsp;Dominique Fober (GRAME),&nbsp;ElMehdi Aamari (I3S),&nbsp;Michel Buffa (Université Côte d’Azur, CNRS, INRIA) and&nbsp;Jerome Lebrun (CNRS)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797448/WAC2019-CameraReadySubmission-38.pdf/6b2dc1f1-8cbc-160b-ca6e-8a2dee5c41b8?t=1575329715557"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/oni24HZUYGI"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></p>
+			<div><strong>10:00-10:20</strong> - <em>Essentia in the browser</em> by&nbsp;<span style="background-color: transparent;">Luis Joglar-Ongay (SonoSuite),&nbsp;Albin Correya (Universitat Pompeu Fabra),&nbsp;Pablo Alonso-Jiménez (Universitat Pompeu Fabra),&nbsp;Xavier Serra (Universitat Pompeu Fabra ) and&nbsp;Dmitry Bogdanov (Universitat Pompeu Fabra)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797451/WAC2019-CameraReadySubmission-51.pdf/8ae5e34b-5f98-079d-36e2-e063198909f4?t=1575329786428"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="16" /></a>&nbsp;<a href="https://youtu.be/uaD5vK4y9ps"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></div>
+			<div>&nbsp;</div>
+			<div><strong>10:20-10:40</strong> - <em>Comparing apples to oranges: A comparison of AudioWorklet polyfills</em><span style="white-space:pre"> by </span><span style="background-color: transparent;">Christoph Guttandin (Media Codings)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797451/WAC2019-CameraReadySubmission-57.pdf/629169b7-828a-f150-2bf5-acfb3cf12248?t=1575329786735"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/jIj-tNYdoCM"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></div>
+			<div>&nbsp;</div>
+			<div><strong>10:40-11:00</strong> - <em>An AudioWorklet-based Signal Engine for a Live Coding Language Ecosystem</em><span style="white-space:pre"> by </span><span style="background-color: transparent;">Francisco Bernardo (University of Sussex),&nbsp;Chris Kiefer (University of Sussex) and&nbsp;Thor Magnusson (University of Sussex)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797448/WAC2019-CameraReadySubmission-40.pdf/12d96b25-63f4-f1e6-6b3f-b761031a9316?t=1575329716181"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/EX02cU592vo"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong><span style="font-size: 1.3em;">11:00-11:15</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em">Coffee &amp; Tea</strong></p>
+			<p><span style="background-color: transparent;">Location: Outside R5 (Realfagbygget, Gløshaugen Campus)</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong><span style="font-size: 1.3em;">11:15-12:35</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em">Papers &amp; Oral Talks</strong></p>
+			<p><strong style="font-size: 1.3em;">Session 5: Collaboration and education</strong></p>
+			<p>Location: R5 (Realfagbygget, Gløshaugen Campus)</p>
+			<p>Session chair: <span style="background-color: transparent;">Miriam Iorwerth (University of the Highlands and Islands)</span></p>
+			<div><strong>11:15-11:35</strong>&nbsp;- <em>Join my party! How can we enhance social interactions in music streaming?</em><span style="white-space:pre"> by </span><span style="background-color: transparent;">Alo Allik (Queen Mary University of London),&nbsp;Florian Thalmann (Queen Mary University of London) and&nbsp;Cornelia Metzig (Queen Mary University of London)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797448/WAC2019-CameraReadySubmission-22.pdf/ee103a1d-7946-adaa-9c49-112feab69035?t=1575329709011"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/v5RnOQleS0A"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></div>
+			<div>&nbsp;</div>
+			<div><strong>11:35-11:55</strong> - <em>Design of a real-time multiparty DAW collaboration application using Web MIDI and WebRTC APIs&nbsp;</em><span style="background-color: transparent;">by Scott Stickland (The University of Newcastle, Australia), &nbsp;Rukshan Athauda (The University of Newcastle, Australia) and&nbsp;Nathan Scott (The University of Newcastle, Australia)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797448/WAC2019-CameraReadySubmission-33.pdf/9bce4a63-b729-78e6-d321-71131328274c?t=1575329713424"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/I7lMTjAupvM"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></div>
+			<div>&nbsp;</div>
+			<div><strong>11:55-12:15</strong> - <em>Facilitating Team-Based Programming Learning with Web Audio</em><span style="white-space:pre"> by </span><span style="background-color: transparent;">Anna Xambó (NTNU),&nbsp;Robin Støckert (NTNU),&nbsp;Alexander Refsum Jensenius (University of Oslo) and&nbsp;Sigurd Saue (NTNU)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797448/WAC2019-CameraReadySubmission-4.pdf/6ab18f77-6769-52fe-22b4-c8cc7bd15b48?t=1575329696817"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/i1OiPt_roeo"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></div>
+			<div>&nbsp;</div>
+			<div><strong>12:15-12:35</strong> - <em>iMuSciCA: A Web Platform for Science Education Through Music Activities</em><span style="white-space:pre"> by </span><span style="background-color: transparent;">Kosmas Kritsis (Athena Research Center),&nbsp;Manuel Bouillon (University of Fribourg); Daniel Martín-Albo (Wiris),&nbsp;Carlos Acosta (Leopoly),&nbsp;Robert Piechaud and&nbsp;Vassilis Katsouros (Athena Research Center)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797448/WAC2019-CameraReadySubmission-24.pdf/681dff60-f042-8835-65d7-d713184b250a?t=1575329711101"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/SivuZcmjRL8"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong><span style="font-size: 1.3em;">12:35-13:30</span></strong></p>
+			</td>
+			<td>
+			<p><span style="font-size: 24px;"><b>Group photo next to Cafe-sito Realfag (lobby of the main entrance door)</b></span></p>
+			<p><strong style="font-size: 1.5em">Lunch</strong></p>
+			<p><span style="background-color: transparent;">Location: SIT (Realfagbygget, Gløshaugen Campus)</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong><span style="font-size: 1.3em;">13:30-14:50</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em">Papers &amp; Oral Talks</strong></p>
+			<p><strong style="font-size: 1.3em;">Session 6: Applications</strong></p>
+			<p>Location: R5 (Realfagbygget, Gløshaugen Campus)</p>
+			<p>Session chair: <span style="background-color: transparent;">Jesse Allison (Louisiana State University)</span></p>
+			<div><strong>13:30-13:50</strong>&nbsp;- <em>Csound Web-IDE</em><span style="white-space:pre"> by </span><span style="background-color: transparent;">Steven Yi (Rochester Institute of Technology),&nbsp;Hlöðver Sigurðsson and&nbsp;Edward Costello (Maynooth University)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797448/WAC2019-CameraReadySubmission-47.pdf/6aa91914-2be1-cb78-0216-1b59074cf184?t=1575329718809"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/4uhqIf0nshQ"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></div>
+			<div>&nbsp;</div>
+			<div><strong>13:50-14:10</strong>&nbsp;- <em>Building an intuitive web-based musical instrument</em><span style="white-space:pre"> by </span><span style="background-color: transparent;">Ashish Dubey (Grofers)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797451/WAC2019-CameraReadySubmission-25.pdf/fe744f21-50b0-04c8-57e6-9de2221045b5?t=1575329784889"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="16" /></a>&nbsp;<a href="https://youtu.be/9iHS0OQ6_zQ"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></div>
+			<div>&nbsp;</div>
+			<div><strong>14:10-14:30</strong>&nbsp;- <em>MAIA Util: An NPM Package for Bridging Web Audio with Music-theoretic Concepts</em><span style="white-space:pre"> by </span><span style="background-color: transparent;">Tom Collins (</span>University of York; MAIA, Inc.<span style="background-color: transparent;">) and&nbsp;Christian Coulon (Music Artificial Intelligence Algorithms, Inc.)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797448/WAC2019-CameraReadySubmission-29.pdf/9d666f3a-cc45-75ca-e3e4-6bfa904841d4?t=1575329712328"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/YPmq9xFK0vA"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></div>
+			<div>&nbsp;</div>
+			<div><strong>14:30-14:50</strong> - <em>Interference: Adapting Player-Music Interaction in Games to a Live Performance Context</em> by&nbsp;<span style="background-color: transparent;">Matthew Wang (Princeton University)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797448/WAC2019-CameraReadySubmission-43.pdf/c2dec2c2-c34a-122d-be16-465082b3afbd?t=1575329716758"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/Xhc4L8ukSEw"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong><span style="font-size: 1.3em;">14:50-15:00</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em">Coffee &amp; Tea</strong></p>
+			<p>Location: Outside R5 (Realfagbygget, Gløshaugen Campus)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong><span style="font-size: 1.3em;">15:00-17:00</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em">Posters &amp; Demos</strong></p>
+			<p><strong style="font-size: 1.3em;">Session 2</strong></p>
+			<p>Location: Rooms R3 and&nbsp;R90&nbsp;(Realfagbygget, Gløshaugen Campus)</p>
+			<div><em>Tweakable</em><span style="white-space:pre"> by </span>Julian Woodward (Visual Systems Ltd)&nbsp;<span style="background-color: transparent;">(R90)<span style="background-color: transparent;"><span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290817988/WAC2019-CameraReadySubmission-10.pdf/bf702376-a6e4-a270-6581-f80f55bbbfec?t=1575408891372"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a></span></span></span></div>
+			<div>&nbsp;</div>
+			<div><em>Sounds Aware</em> by<span style="white-space:pre"> </span>Tate Carson (Louisiana State University)&nbsp;<span style="background-color: transparent;"><span style="background-color: transparent;">(R3)<span style="background-color: transparent;"><span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290817988/WAC2019-CameraReadySubmission-13.pdf/ae707b60-2eb2-a794-4060-b9e00de21773?t=1575408891774"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a></span></span></span></span></div>
+			<div>&nbsp;</div>
+			<div><em>Cassettes - An online audio editor</em><span style="white-space:pre"> by </span>Xingxing Yang and Jatin Chowdhury (CCRMA)&nbsp;<span style="background-color: transparent;"><span style="background-color: transparent;">(R3)<span style="background-color: transparent;"><span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290817988/WAC2019-CameraReadySubmission-20.pdf/c4ccc750-691f-37d5-dbe1-4bea76631946?t=1575408892147"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a></span></span></span></span></div>
+			<div>&nbsp;</div>
+			<div><em>Ongaq JS: An elementary library for programming music</em><span style="white-space: pre;"> by </span>Hiroyuki Takakura (CodeNinth)&nbsp;<span style="background-color: transparent;"><span style="background-color: transparent;">(R3)<span style="background-color: transparent;"><span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290818186/WAC2019-CameraReadySubmission-18.pdf/13b1f9b2-ddd3-40fb-d3dd-78f44adc676a?t=1575409274849"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a></span></span></span></span></div>
+			<div>&nbsp;</div>
+			<div><em>A 2 Million Commercial Song Interactive Navigator</em><span style="white-space:pre"> by </span>Michel Buffa (Université Côte d’Azur, CNRS, INRIA),&nbsp;Johan Pauwels (Queen Mary University of London),&nbsp;Jerome Lebrun (CNRS) and&nbsp;Guillaume Pelerin (IRCAM)&nbsp;<span style="background-color: transparent;"><span style="background-color: transparent;">(R3)<span style="background-color: transparent;"><span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290818186/WAC2019-CameraReadySubmission-31.pdf/eedefa99-3470-8176-121a-d774dbb4402c?t=1575409275960"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a></span></span></span></span></div>
+			<div>&nbsp;</div>
+			<div>Showcase by: NTNU IES <span style="background-color: transparent;"><span style="background-color: transparent;">(R3)</span></span>, SonoSuite <span style="background-color: transparent;"><span style="background-color: transparent;">(R3)</span></span>, ROLI <span style="background-color: transparent;"><span style="background-color: transparent;">(R3)</span></span>, Ableton <span style="background-color: transparent;">(R90)</span>, Native Instruments <span style="background-color: transparent;">(R9&gt;)</span>, NTNU Institutt for Musikk&nbsp;<span style="background-color: transparent;">(R90)&nbsp;<span style="background-color: transparent;">and Spotify&nbsp;<span style="background-color: transparent;">(R90)</span></span></span></div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong><span style="font-size: 1.3em;">16:45</span></strong></p>
+			<p><strong><span style="font-size: 1.3em;">17:30</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em;"><em>Bus 1 to Banquet venue&nbsp;</em></strong></p>
+			<p><strong style="font-size: 1.5em;"><em>Bus 2&nbsp;to Banquet venue</em></strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong><span style="font-size: 1.3em;">18:00-23:55</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em">Banquet</strong></p>
+			<p>Location: <a href="https://www.google.com/maps?ll=63.440875,10.427011&amp;z=16&amp;t=m&amp;hl=en&amp;gl=GB&amp;mapclient=embed&amp;cid=8501161850265640342">Dahls</a> (Local Brewery Pub)</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+                </div>
+                                                <div id="t-1285430079-4" class="tab-pane">
+                    <h2>Friday 6 December - Day 3 conference</h2>
+<table bgcolor="#FFFFFF" border="1" cellpadding="5" cellspacing="0" style="width:100%;">
+	<tbody>
+		<tr>
+			<td width="100px">
+			<p><strong><span style="font-size: 1.3em;">08:15-09:00</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em;">Registration &amp; Morning Coffee</strong></p>
+			<p><span style="background-color: transparent;">Location: Outside Realfagbygget, Gløshaugen Campus</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong><span style="font-size: 1.3em;">09:00-10:00</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em;">Breakfast talk with Paul Adenot: Recent and Future Evolution of the Web Audio API&nbsp;</strong><a href="https://www.ntnu.edu/documents/1282113268/1290470728/WAC2019-CameraReadySubmission-81.pdf/77c02823-a7c4-a73f-49e1-ec43122fddf1?version=1.0&amp;t=1573756259181&amp;download=true"><img alt="link to pdf" height="31" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="24" /></a>&nbsp;<a href="https://youtu.be/hO810OoIN4s"><img alt="link to video" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" /></a></p>
+			<p>Location: R5 (Realfagbygget, Gløshaugen Campus)</p>
+			<p>Facilitator: Anna Xambó&nbsp;(NTNU)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong><span style="font-size: 1.3em;">10:00-11:00</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em;">Oral Talks &amp; Panels</strong></p>
+			<p><strong style="font-size: 1.3em;">Session 7: Sustainability</strong></p>
+			<p>Location: R5 (Realfagbygget, Gløshaugen Campus)</p>
+			<p>Session chair: <span style="background-color: transparent;">Benjamin Matuszewski (Ircam)</span></p>
+			<p><strong>10:00-10:15</strong> - <em>The Audio Community Group</em> by Christoph Guttandin&nbsp;<a href="https://youtu.be/Ev1gyTHMLCs"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></p>
+			<p><strong>10:15-10:30</strong> - <em>The new WAC website: towards a sustainable conference</em> by&nbsp;Jørgen Varpe (NTNU) and&nbsp;Eigil Aandahl (NTNU)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797451/WAC2019-CameraReadySubmission-46.pdf/0e98a4c9-1a59-357a-ceae-e92da922a880?t=1575329785833"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="16" /></a>&nbsp;<a href="https://youtu.be/reQCYHjfkzY"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></p>
+			<p><strong>10:30-11:00</strong> - <em>Panel W3C and the WAC community</em>. Moderator:&nbsp;Diéssica Gurskas (Native Instruments). Panelists:&nbsp;Paul Adenot (Mozilla),&nbsp;Christoph Guttandin&nbsp;(Media Codings),&nbsp;Michel Buffa (Université Cote d’Azur, CNRS, INRIA).&nbsp;<a href="https://youtu.be/6311psrA7r0"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong><span style="font-size: 1.3em;">11:00-11:15</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em;">Coffee &amp; Tea</strong></p>
+			<p><span style="background-color: transparent;">Location: Outside R5 (Realfagbygget, Gløshaugen Campus)</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong><span style="font-size: 1.3em;">11:15-12:35</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em;">Panels &amp; Final Announcements</strong></p>
+			<p><strong style="font-size: 1.3em;">Session 8: The Future</strong></p>
+			<p>Location: R5 (Realfagbygget, Gløshaugen Campus)</p>
+			<p>Session chairs: Sara Martin and Anna Xambó</p>
+			<p><strong>11:15-11:45</strong> - Panel: <em>Industry &amp; Academia</em>. Moderator: Johan Pauwels (Queen Mary University of London). Panelists: Norbert Schnell (Furtwangen University), Rebekah Wilson (Source Elements),&nbsp;Hiroyuki Takakura (CodeNinth).&nbsp;<a href="https://youtu.be/Bu_-SI5UhtM"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></p>
+			<p><strong>11:45-12:15</strong> - Panel: <em>Accessibility</em>. Moderator: Andreas Bergsland. Panelists: Miranda Moen (NTNU alumni), David Brüggemann (Nord University), Monica Ruud (NTNU).&nbsp;<a href="https://youtu.be/54eeQi0tBIU"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></p>
+			<p><strong>12:15-12:35</strong> - Final Announcements.</p>
+			<ul>
+				<li>12:15-12:18 ICLI 2020</li>
+				<li>12:18-12:21&nbsp;Concert "Future Perfect" by Garth Paine</li>
+				<li>12:21-12:26 Best Papers Awards. Jury: Jan Monschke (SoundCloud), Garth Paine (Arizona State University) and Ariane Stolfi (Federal University of South Bahia).</li>
+				<li>12:26-12:31 Announcement of WAC 2020</li>
+				<li>12:31-12:35 Final Remarks &amp; Thanks</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong><span style="font-size: 1.3em;">12:35-13:30</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em;">Lunch</strong></p>
+			<p><span style="background-color: transparent;">Location: SIT (Realfagbygget, Gløshaugen Campus)</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong><span style="font-size: 1.3em;">13:30-14:50</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em;">Workshops (part 1)</strong></p>
+			<p>Location: R5, R6, R3, R90, R92 (Realfagbygget, Gløshaugen Campus)</p>
+			<p><em>Workshop on AudioWorklet</em> by Paul Adenot (Mozilla) (R5)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797387/WAC2019-CameraReadySubmission-78.pdf/913d4cec-4cb0-26b9-a1cf-fe951c89b8cc?t=1575328682000"><img alt="link to pdf" height="19" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/x3npwjDvM4I"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></p>
+			<p><em>Designing and Performing with Live Coding Languages for Signal Processing and Machine Intelligence on the Web</em> by Francisco Bernardo (University of Sussex), Chris Kiefer (University of Sussex) and Thor Magnusson (University of Sussex) <span style="background-color: transparent;"><span style="background-color: transparent;">(R3)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797387/WAC2019-CameraReadySubmission-42.pdf/8c28d42a-f5b0-7366-d614-f5ef7c02899d?t=1575408396130"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/9fHNwg5QCmI"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></span></p>
+			<p><em>Live coding with Makkeróni</em> by Balázs Kovács (University of Pécs) (R92)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797387/WAC2019-CameraReadySubmission-75.pdf/d0a0ec1f-8d7e-88f6-8ea2-315605ec5fb7?t=1575408396609"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="16" /></a>&nbsp;<span style="background-color: transparent;"><a href="https://youtu.be/XNiSgrSjHIc"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></p>
+			<p><em>Audiovisual Programming in Live Performance</em> by Charlie Roberts (Worcester Polytechnic Institute) (R90)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797387/WAC2019-CameraReadySubmission-80.pdf/d51408ad-0ec8-a338-6d36-f80eb3cdea80?t=1575328683208"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="16" /></a>&nbsp;<a href="https://youtu.be/EAGNVtU9oHc"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></p>
+			<p><em>Diversity Workshop</em> by Miranda Moen (NTNU alumni), Victoria Øverby Steinland (Balansekunst/The Art of Balance), Andrea Hegdahl Tiltnes (NTNU, Girl Geek Dinners Trondheim) and Kari Dahn (Girl Geek Dinners Trondheim). (R6) Please note: This workshop ends at 15.00.&nbsp;<span style="background-color: transparent;"><a href="https://www.ntnu.edu/documents/1282113268/1290797387/WAC2019-CameraReadySubmission-79.pdf/41ef833e-ab16-5694-c209-1c2d3a1b543e?t=1575328682712"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a></span>&nbsp;<a href="https://youtu.be/YllaTUGGnHE"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></p>
+			<ul>
+				<li>13:30-14:30 Balansekunst</li>
+				<li>14:30-15:00 Girls Geek Dinner Trondheim</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong><span style="font-size: 1.3em;">14:50-15:00</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em;">Coffee &amp; Tea</strong></p>
+			<p>Location: Outside R5 (Realfagbygget, Gløshaugen Campus)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong><span style="font-size: 1.3em;">15:00-16:30</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em;">Workshops (part 2)</strong></p>
+			<p>Location: R5, R6, R3, R90, R92 (Realfagbygget, Gløshaugen Campus)</p>
+			<p><em>Workshop on AudioWorklet</em>&nbsp;by Paul Adenot (Mozilla) (R5)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797387/WAC2019-CameraReadySubmission-78.pdf/913d4cec-4cb0-26b9-a1cf-fe951c89b8cc?t=1575328682000"><img alt="link to pdf" height="19" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/x3npwjDvM4I"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></p>
+			<p><em>Designing and Performing with Live Coding Languages for Signal Processing and Machine Intelligence on the Web</em>&nbsp;by Francisco Bernardo (University of Sussex), Chris Kiefer (University of Sussex) and Thor Magnusson (University of Sussex)&nbsp;<span style="background-color: transparent;"><span style="background-color: transparent;">(R3)<span style="background-color: transparent;"><span style="background-color: transparent;"><span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797387/WAC2019-CameraReadySubmission-42.pdf/8c28d42a-f5b0-7366-d614-f5ef7c02899d?t=1575408396130"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/9fHNwg5QCmI"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></span></span></span></p>
+			<p><em>Live coding with Makkeróni</em>&nbsp;by Balázs Kovács (University of Pécs)&nbsp;(<span style="background-color: transparent;">R92</span>)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797387/WAC2019-CameraReadySubmission-75.pdf/d0a0ec1f-8d7e-88f6-8ea2-315605ec5fb7?t=1575408396609"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="16" /></a>&nbsp;<a href="https://youtu.be/XNiSgrSjHIc"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></p>
+			<p><em>Audiovisual Programming in Live Performance</em>&nbsp;by Charlie Roberts (Worcester Polytechnic Institute)&nbsp;(R90)<span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290797387/WAC2019-CameraReadySubmission-80.pdf/d51408ad-0ec8-a338-6d36-f80eb3cdea80?t=1575328683208"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="16" /></a>&nbsp;<a href="https://youtu.be/EAGNVtU9oHc"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong><span style="font-size: 1.3em;">16:30-17:00</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em;">Workshops Wrap-Up (All)</strong></p>
+			<p>Location: R5 (Realfagbygget, Gløshaugen Campus)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong><span style="font-size: 1.3em;">17:15</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em;">Bus to Solsiden area</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong><span style="font-size: 1.3em;">17:30-19:00</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em;">Dinner (own expense)</strong></p>
+			<p><span style="background-color: transparent;">Location: Solsiden area</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p><strong><strong style="font-size: 1.5em;">19:00-22:00</strong></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em;">Concert &amp; Final Party&nbsp;(Open Mic with the Local Community)</strong></p>
+			<p>Location: <a href="https://www.google.com/maps?ll=63.433807,10.403651&amp;z=16&amp;t=m&amp;hl=en&amp;gl=GB&amp;mapclient=embed&amp;cid=2872820806008036832">Cinemateket</a></p>
+			<p>Facilitators: Oeyvind Brandtsegg (NTNU) and Ariane Stolfi&nbsp;(Federal University of South Bahia, Brazil)</p>
+			<div><em>Performing with QuaverSeries Live Coding Environment</em><span style="white-space: pre;"> by </span>Qichao Lan (University of Oslo),&nbsp;Çağrı Erdem (University of Oslo) and Alexander Refsum Jensenius (University of Oslo)<span style="background-color: transparent;"><span style="background-color: transparent;"><span style="background-color: transparent;"><span style="background-color: transparent;">&nbsp;<a href="https://www.ntnu.edu/documents/1282113268/1290818078/WAC2019-CameraReadySubmission-27.pdf/66c1d1b8-bc55-1539-17da-dc57c41b7733?t=1575409090403"><img alt="link to pdf" height="20" src="https://www.ntnu.edu/documents/1282113268/1290470798/pdf-icon.png/f74236b2-e78d-1a44-b2bf-bc1700ad504b?t=1573757737695" width="15" /></a>&nbsp;<a href="https://youtu.be/qnEiHg6ljTk"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></span></span></span></span></div>
+			<div>&nbsp;</div>
+			<div><strong>Jam session with local musicians and the WAC community:<span style="white-space:pre"> </span></strong></div>
+			<div>&nbsp;</div>
+			<div>Guergana Tzatchkova, TARFIELD (Arnfinn Killingtveit and Martin Palmer)&nbsp;<a href="https://youtu.be/7F3eXF7LRtw"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></div>
+			<div>&nbsp;</div>
+			<div>
+			<p>Ariane Stolfi, Raimund Vogtenhuber, Guergana Tzatchkova, TARFIELD&nbsp;<a href="https://youtu.be/CckRwjkXk08"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></p>
+			<p>Michel Buffa, Luis Arandas, Steven Yi, Çağrı Erdem, Ariane Stolfi, Guergana Tzatchkova&nbsp;<a href="https://youtu.be/F4XGJwwDJV0"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></p>
+			<p>Jesse Allison, Balázs Kovács, Francisco Bernardo, Michel Buffa&nbsp;<a href="https://youtu.be/suD_gEykPV0"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></p>
+			<p>Ada Hoel, Norbert Schnell, Julian Woodward, Jesse Allison, Guergana Tzatchkova&nbsp;<a href="https://youtu.be/-xzDo08jLv4"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></p>
+			<p>Garth Paine, Guergana Tzatchkova, Nikita Kabardin&nbsp;<a href="https://youtu.be/0VprMLATQGc"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></p>
+			<p>Spencer Rudnick, Nikita Kabardin, Guergana Tzatchkova, Ada Hoel, Norbert Schnell, Shihong Ren&nbsp;<a href="https://youtu.be/uAhI39MzEJ4"><img alt="link to video" height="14" src="https://www.ntnu.edu/documents/1282113268/1290470798/video-icon.png" width="18" /></a></p>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+                </div>
+                                                <div id="t-1285430079-5" class="tab-pane">
+                    <h2>Saturday 7 December - Concert</h2>
+<table bgcolor="#FFFFFF" border="1" cellpadding="5" cellspacing="0" style="width:100%;">
+	<tbody>
+		<tr>
+			<td width="100px">
+			<p><strong><span style="font-size: 1.3em;">20:00-21:30</span></strong></p>
+			</td>
+			<td>
+			<p><strong style="font-size: 1.5em;">EA-T presenterer: Garth Paine - Future Perfect</strong></p>
+			<p><span style="background-color: transparent;">Location: <a href="https://goo.gl/maps/F42EuFdRu5jchgGSA">Vitasenteret i Trondheim</a>&nbsp;</span>- Kongens gate 1</p>
+			<p>For more information about the event, visit <a href="https://www.facebook.com/events/1254503998086497/?active_tab=about">EA-T presenterer: Garth Paine - Future Perfect</a>.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+                </div>
+                        </div>
+</div>
+</div>
+					
+				
+			
+		
+
+	<div class="content-metadata-asset-addon-entries">
+	
+	</div>
+
+				
+			
+		
+
+
+	</div>
+			</div>
+	
+	</div>
+</section>
+
+	
+	
+	</div>
+</div>
+      </div>
+      <div class="portlet-column portlet-column-last col-md-4" id="column-3">
+        <div class="portlet-dropzone portlet-column-content portlet-column-content-last" id="layout-column_column-3">
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-borderless portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_GpbafrDQdACj_" >
+		<span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_GpbafrDQdACj"></span>
+
+	
+	
+	
+	
+<section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_GpbafrDQdACj">
+	<div class="portlet-content">
+			<div class="autofit-float autofit-row portlet-header">
+					<div class="autofit-col autofit-col-expand">
+						<h2 class="portlet-title-text">Sponsors</h2>
+					</div>
+					<div class="autofit-col autofit-col-end">
+						<div class="autofit-section">
+							<div class="visible-interaction">
+
+	
+	
+	
+
+</div>
+						</div>
+					</div>
+			</div>
+	
+			<div class=" portlet-content-container" >
+			
+	<div class="portlet-body">
+
+	
+		
+			
+			
+			
+			
+				
+				
+
+
+	
+		
+		
+			
+				
+				
+				
+				
+						<div class="text-right user-tool-asset-addon-entries">
+						
+						</div>
+						<div class="clearfix journal-content-article" data-analytics-asset-id="1283579789" data-analytics-asset-title="Sponsors" data-analytics-asset-type="web-content">
+
+	<div class="normal">
+	
+	
+	
+	
+			<div class="innholdstekst"><h2>Silver Sponsors</h2>
+<p><a href="https://www.ntnu.no/ies/institutt-for-elektroniske-systemer"><img alt="Logo fo Faculty of Information Technology and Electrical Engineering" src="https://www.ntnu.edu/documents/1282113268/1282945708/logo-NTNU-IES.png/e7306701-72c5-4671-98ea-2d380b690969?t=1560349916163" style="width: 500px; margin-top: 1em; margin-bottom: 1em" /></a> <a href="http://www.sonosuite.com/"><img alt="Logo for Sono Suite" src="https://www.ntnu.edu/documents/1282113268/1282945708/logo-sonosuite.png/cbcde158-525c-470e-a4b5-b4ba2c20cda7?t=1569529754145" style="width: 500px; margin-top: 1em; margin-bottom: 1em" /></a></p>
+<h2>Diversity Sponsors</h2>
+<p><a href="https://roli.com"><img alt="Logo for Roli" src="https://www.ntnu.edu/documents/1282113268/1282945708/logo-ROLI.svg/9e9452cd-8d3d-4417-bb6b-3726bb393e28" style="width: 170px; margin: 1em" /></a> &nbsp;&nbsp; &nbsp;&nbsp;<a href="https://mozilla.org"><img alt="Logo for Mozilla" src="https://www.ntnu.edu/documents/1282113268/1282945708/logo-mozilla.jpg/f897ee26-62cb-4236-a9d5-a7b39961fbec?t=1554849359714" style="width: 300px; margin: 1em" /></a><br />
+&nbsp;</p>
+<h2>Bronze Sponsors</h2>
+<p><a href="https://www.ableton.com/"><img alt="Logo for Ableton" src="https://www.ntnu.edu/documents/1282113268/1282945708/logo-ableton.svg/c25a25a4-b7db-4154-83b9-0ed9143275c2" style="height: 53px; width: 320px; margin: 1em;" /></a>&nbsp;&nbsp; &nbsp;&nbsp;<a href="https://native-instruments.com"><img alt="Logo for Native Instruments" src="https://www.ntnu.edu/documents/1282113268/1282945708/logo-NI.png/04b25fdc-ad9d-4c33-b84f-0c44449bd79c?t=1560536348963" style="height: 54px; width: 320px; margin: 1em;" /></a> <a href="https://www.spotify.com/"><img alt="Logo for Spotify" src="https://www.ntnu.edu/documents/1282113268/1282945708/logo-Spotify.png/bd8a6530-1fe8-2cb2-1c89-e4c88956c766?t=1574031347031" style="width: 320px; margin: 1em;" /></a>&nbsp;&nbsp; &nbsp;&nbsp;</p></div>
+		
+	    
+    
+	<span class="clear"></span>
+</div>
+</div>
+					
+				
+			
+		
+
+	<div class="content-metadata-asset-addon-entries">
+	
+	</div>
+
+				
+			
+		
+
+
+	</div>
+			</div>
+	
+	</div>
+</section>
+
+	
+	
+	</div>
+	<div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-borderless portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_GR8iahCm67gJ_" >
+		<span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_GR8iahCm67gJ"></span>
+
+	
+	
+	
+	
+<section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_GR8iahCm67gJ">
+	<div class="portlet-content">
+			<div class="autofit-float autofit-row portlet-header">
+					<div class="autofit-col autofit-col-expand">
+						<h2 class="portlet-title-text">In collaboration with</h2>
+					</div>
+					<div class="autofit-col autofit-col-end">
+						<div class="autofit-section">
+							<div class="visible-interaction">
+
+	
+	
+	
+
+</div>
+						</div>
+					</div>
+			</div>
+	
+			<div class=" portlet-content-container" >
+			
+	<div class="portlet-body">
+
+	
+		
+			
+			
+			
+			
+				
+				
+
+
+	
+		
+		
+			
+				
+				
+				
+				
+						<div class="text-right user-tool-asset-addon-entries">
+						
+						</div>
+						<div class="clearfix journal-content-article" data-analytics-asset-id="1282945760" data-analytics-asset-title="In collaboration with" data-analytics-asset-type="web-content">
+
+	<div class="notis normal_notis">
+			<h2>In collaboration with</h2>
+	
+			<div class="innholdstekst"><p>&nbsp;</p>
+<table cellpadding="5">
+	<tbody>
+		<tr>
+			<td width="50%"><a href="https://www.ntnu.edu/music"><img alt="NTNU Department of Music logo" src="https://www.ntnu.edu/documents/1282113268/1282945708/logo-NTNU-music.png/9dbf6689-df5d-449d-901c-61753ef3c5a5?t=1559161471704" style="width:160px; float:left" /></a></td>
+			<td width="50%">
+			<div><a href="https://www.trondheim.kommune.no/"><img alt="Trondheim Kommune logo" src="https://www.ntnu.edu/documents/1282113268/1282945708/logo-TKrgb_vertikal.jpg/b408e311-ffc7-4eac-84d5-6a13e7554017?t=1560350677827" style="width:60px; padding:0px 0; margin:0 3em 0 2em;" /></a></div>
+			</td>
+		</tr>
+		<tr>
+			<td width="50%"><a href="https://rockheim.no"><img alt="Rockheim logo" src="https://www.ntnu.edu/documents/1282113268/1282945708/logo-Rockheim.jpg/b9f0fcdc-8ba2-e314-c885-d45e0f947ed4?t=1573991060135" style="width:160px; float:left" /></a></td>
+			<td width="50%"><a href="https://www.ntnu.edu/salto"><img alt="SALTO logo" src="https://www.ntnu.edu/documents/1282113268/1282945708/logo-SALTO.png/4d54ee7c-f077-8a18-a7bf-c7e7b2041e38?version=1.0&amp;t=1573686957786&amp;imagePreview=1" style="width:120px; vertical-align:middle; padding:1.5em 0px; float:left" /></a></td>
+		</tr>
+		<tr>
+			<td width="50%">
+			<p><img alt="WoNoMute logo" src="https://www.ntnu.edu/documents/1282113268/1282945708/logo-wonomute.png/4b596a86-a226-4c44-824a-c3c990edd35d?t=1548323503806" style="width:160px; padding:1em 0px; float:left" /></p>
+			</td>
+			<td width="50%"><a href="http://www.cinemateket-trondheim.no/"><img alt="Cinemateket logo" src="https://www.ntnu.edu/documents/1282113268/1282945708/cinemateket-logo.png/7e734eaa-11ad-be1b-a515-b99f04d01cb2?t=1575836226611" style="width:160px; padding:1em 0px; float:left" /></a></td>
+		</tr>
+	</tbody>
+</table></div>
+	
+	    
+    
+	<span class="clear"></span>
+</div>
+</div>
+					
+				
+			
+		
+
+	<div class="content-metadata-asset-addon-entries">
+	
+	</div>
+
+				
+			
+		
+
+
+	</div>
+			</div>
+	
+	</div>
+</section>
+
+	
+	
+	</div>
+</div>
+      </div>
+    </div>
+    <div class="portlet-layout row">
+      <div
+        class="portlet-column portlet-column-first col-md-4"
+        id="bottom-column"
+      >
+        <div class="portlet-dropzone empty portlet-column-content portlet-column-content-first" id="layout-column_bottom-column"></div>
+      </div>
+      <div class="portlet-column col-md-4" id="bottom-column-2">
+        <div class="portlet-dropzone empty portlet-column-content" id="layout-column_bottom-column-2"></div>
+      </div>
+      <div
+        class="portlet-column portlet-column-last col-md-4"
+        id="bottom-column-3"
+      >
+        <div class="portlet-dropzone empty portlet-column-content portlet-column-content-last" id="layout-column_bottom-column-3"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+	<div class="portlet-boundary portlet-boundary_globalalertportlet_WAR_globalalertportlet_  portlet-static portlet-static-end portlet-borderless  " id="p_p_id_globalalertportlet_WAR_globalalertportlet_" >
+		<span id="p_globalalertportlet_WAR_globalalertportlet"></span>
+
+	
+		
+
+	</div>
+	<footer id="blue-footer">
+		<div class="container">
+			<div class="end">
+					<img src="https://www.ntnu.edu/o/ntnu-theme/images/logo_ntnu_tag_english.svg" alt="NTNU logo" class="ntnu-logo"/>
+			</div>
+		</div>
+	</footer>
+	</div>
+
+
+
+<script type="text/javascript">
+// <![CDATA[
+
+	
+		
+		
+
+	Liferay.BrowserSelectors.run();
+// ]]>
+</script>
+<script type="text/javascript">
+	// <![CDATA[
+	
+		Liferay.currentURL = '\x2fwac2019\x2fprogramme';
+		Liferay.currentURLEncoded = '\x252Fwac2019\x252Fprogramme';
+	// ]]>
+</script>
+
+	<script type="text/javascript">
+		// <![CDATA[
+		
+		
+		// ]]>
+	</script>
+
+	
+
+<script type="text/javascript">
+// <![CDATA[
+(function() {var $ = AUI.$;var _ = AUI._;
+	var pathnameRegexp = /\/documents\/(\d+)\/(\d+)\/(.+?)\/([^&]+)/;
+	function handleDownloadClick(event) {
+		if (event.target.nodeName.toLowerCase() === 'a') {
+			if (window.Analytics) {
+				var anchor = event.target;
+				var match = pathnameRegexp.exec(anchor.pathname);
+				if (match) {
+					var getParameterValue = function(parameterName) {
+						var result = null;
+						var tmp = [];
+						anchor
+							.search
+							.substr(1)
+							.split("&")
+							.forEach(
+								function(item) {
+									tmp = item.split("=");
+									if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+								}
+							);
+						return result;
+					}
+					var groupId = match[1];
+					var fileEntryUUID = match[4];
+					fetch(
+						'https://www.ntnu.edu/o/document_library/analytics/resolve_file_entry?groupId=' + encodeURIComponent(groupId) + '&uuid=' + encodeURIComponent(fileEntryUUID),
+						{
+							credentials: 'include',
+							method: 'GET'
+						}
+					).then(function(response) {
+						return response.json();
+					}).then(function(response) {
+						Analytics.send(
+							'documentDownloaded',
+							'Document',
+							{
+								groupId: groupId,
+								fileEntryId: response.fileEntryId,
+								preview: !!window._com_liferay_document_library_analytics_isViewFileEntry,
+								title: decodeURIComponent(match[3].replace(/\+/ig, ' ')),
+								version: getParameterValue('version')
+							}
+						);
+					}).catch(function() {
+						return;
+					});
+				}
+			}
+		}
+	}
+	document.body.addEventListener('click', handleDownloadClick);
+	var onDestroyPortlet = function() {
+		document.body.removeEventListener('click', handleDownloadClick);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	}
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+})();(function() {var $ = AUI.$;var _ = AUI._;
+	var onShare = function(data) {
+		if (window.Analytics) {
+			Analytics.send(
+				'shared',
+				'SocialBookmarks',
+				{
+					className: data.className,
+					classPK: data.classPK,
+					type: data.type,
+					url: data.url
+				}
+			);
+		}
+	}
+	var onDestroyPortlet = function() {
+		Liferay.detach('socialBookmarks:share', onShare);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	}
+	Liferay.on('socialBookmarks:share', onShare);
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+})();(function() {var $ = AUI.$;var _ = AUI._;
+	var onVote = function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'VOTE',
+				'Ratings',
+				{
+					className: event.className,
+					classPK: event.classPK,
+					ratingType: event.ratingType,
+					score: event.score
+				}
+			);
+		}
+	}
+	var onDestroyPortlet = function() {
+		Liferay.detach('ratings:vote', onVote);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	}
+	Liferay.on('ratings:vote', onVote);
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+})();(function() {var $ = AUI.$;var _ = AUI._;
+	var onDestroyPortlet = function() {
+		Liferay.detach('messagePosted', onMessagePosted);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	}
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+	var onMessagePosted = function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'posted',
+				'Comment',
+				{
+					className: event.className,
+					classPK: event.classPK,
+					commentId: event.commentId,
+					text: event.text
+				}
+			);
+		}
+	}
+	Liferay.on('messagePosted', onMessagePosted);
+})();
+	if (Liferay.Data.ICONS_INLINE_SVG) {
+		svg4everybody(
+			{
+				attributeName: 'data-href',
+				polyfill: true,
+				validate: function (src, svg, use) {
+					return !src || !src.startsWith('#');
+				}
+			}
+		);
+	}
+
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_GpbafrDQdACj');
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_GpbafrDQdACj_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_GpbafrDQdACj',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1285431526\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_GpbafrDQdACj\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-3\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d2\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fwac2019\x252Fprogramme',
+			refreshURLData: {}
+		}
+	);
+
+		Liferay.Portlet.register('languageportlet_WAR_languageportlet_INSTANCE_abcd');
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_languageportlet_WAR_languageportlet_INSTANCE_abcd_',
+			portletId: 'languageportlet_WAR_languageportlet_INSTANCE_abcd',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1285431526\x26p_p_id\x3dlanguageportlet_WAR_languageportlet_INSTANCE_abcd\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fwac2019\x252Fprogramme\x26settingsScope\x3dportletInstance',
+			refreshURLData: {}
+		}
+	);
+
+		Liferay.Portlet.register('com_liferay_product_navigation_user_personal_bar_web_portlet_ProductNavigationUserPersonalBarPortlet');
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_product_navigation_user_personal_bar_web_portlet_ProductNavigationUserPersonalBarPortlet_',
+			portletId: 'com_liferay_product_navigation_user_personal_bar_web_portlet_ProductNavigationUserPersonalBarPortlet',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1285431526\x26p_p_id\x3dcom_liferay_product_navigation_user_personal_bar_web_portlet_ProductNavigationUserPersonalBarPortlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fwac2019\x252Fprogramme\x26settingsScope\x3dportletInstance',
+			refreshURLData: {}
+		}
+	);
+
+		Liferay.Portlet.register('com_liferay_product_navigation_user_personal_bar_web_portlet_ProductNavigationUserPersonalBarPortlet');
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_product_navigation_user_personal_bar_web_portlet_ProductNavigationUserPersonalBarPortlet_',
+			portletId: 'com_liferay_product_navigation_user_personal_bar_web_portlet_ProductNavigationUserPersonalBarPortlet',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1285431526\x26p_p_id\x3dcom_liferay_product_navigation_user_personal_bar_web_portlet_ProductNavigationUserPersonalBarPortlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fwac2019\x252Fprogramme\x26settingsScope\x3dportletInstance',
+			refreshURLData: {}
+		}
+	);
+
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_GR8iahCm67gJ');
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 1,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_GR8iahCm67gJ_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_GR8iahCm67gJ',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1285431526\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_GR8iahCm67gJ\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-3\x26p_p_col_pos\x3d1\x26p_p_col_count\x3d2\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fwac2019\x252Fprogramme',
+			refreshURLData: {}
+		}
+	);
+
+		Liferay.Portlet.register('globalalertportlet_WAR_globalalertportlet');
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_globalalertportlet_WAR_globalalertportlet_',
+			portletId: 'globalalertportlet_WAR_globalalertportlet',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1285431526\x26p_p_id\x3dglobalalertportlet_WAR_globalalertportlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fwac2019\x252Fprogramme\x26settingsScope\x3dportletInstance',
+			refreshURLData: {}
+		}
+	);
+
+		Liferay.Portlet.register('ntnubreadcrumbportlet_WAR_ntnubreadcrumbportlet_INSTANCE_abcd');
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_ntnubreadcrumbportlet_WAR_ntnubreadcrumbportlet_INSTANCE_abcd_',
+			portletId: 'ntnubreadcrumbportlet_WAR_ntnubreadcrumbportlet_INSTANCE_abcd',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1285431526\x26p_p_id\x3dntnubreadcrumbportlet_WAR_ntnubreadcrumbportlet_INSTANCE_abcd\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fwac2019\x252Fprogramme\x26settingsScope\x3dportletInstance',
+			refreshURLData: {}
+		}
+	);
+
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_tttmAXxhfhAl');
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_tttmAXxhfhAl_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_tttmAXxhfhAl',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1285431526\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_tttmAXxhfhAl\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-1\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d2\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fwac2019\x252Fprogramme',
+			refreshURLData: {}
+		}
+	);
+
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_9QQqgkAe3J9G');
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 1,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_9QQqgkAe3J9G_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_9QQqgkAe3J9G',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1285431526\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_9QQqgkAe3J9G\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-1\x26p_p_col_pos\x3d1\x26p_p_col_count\x3d2\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fwac2019\x252Fprogramme',
+			refreshURLData: {}
+		}
+	);
+
+		Liferay.Portlet.register('com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet');
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_',
+			portletId: 'com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1285431526\x26p_p_id\x3dcom_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fwac2019\x252Fprogramme\x26settingsScope\x3dportletInstance',
+			refreshURLData: {}
+		}
+	);
+Liferay.Loader.require('clay-tooltip/src/ClayTooltip', function(clayTooltipSrcClayTooltip) {
+(function(){
+var ClayTooltip = clayTooltipSrcClayTooltip;
+(function() {var $ = AUI.$;var _ = AUI._;
+	if (!Liferay.Data.LFR_PORTAL_CLAY_TOOLTIP) {
+		Liferay.Data.LFR_PORTAL_CLAY_TOOLTIP = ClayTooltip.default.init(
+			{
+				selectors: [
+					'.management-bar [data-title]:not(.lfr-portal-tooltip)',
+					'.management-bar [title]:not(.lfr-portal-tooltip)'
+				]
+			}
+		);
+	}
+})();})();
+},
+function(error) {
+console.error(error);
+});AUI().use('aui-tooltip', 'liferay-menu', 'liferay-notice', 'aui-base', 'liferay-navigation-interaction', 'liferay-session', 'liferay-poller', function(A) {(function() {var $ = AUI.$;var _ = AUI._;	var navigation = A.one('#navigationCollapse');
+	if (navigation) {
+		navigation.plug(Liferay.NavigationInteraction);
+	}
+	Liferay.Data.NAV_INTERACTION_LIST_SELECTOR = '.navbar-site';
+	Liferay.Data.NAV_LIST_SELECTOR = '.navbar-site';
+		var navline = document.getElementById("navigationCollapse");
+	if (navline){
+		var sticky = navline.offsetTop;
+		function checkSticky() {
+			if (window.pageYOffset > sticky) {
+				navline.classList.add("sticky");
+				document.body.style.paddingTop = navline.offsetHeight + "px";
+			}
+			else {
+				navline.classList.remove("sticky");
+				document.body.style.paddingTop = "0px";
+			}
+		}
+		window.addEventListener("scroll", checkSticky);
+	}
+})();(function() {var $ = AUI.$;var _ = AUI._;
+	if (A.UA.mobile) {
+		Liferay.Util.addInputCancel();
+	}
+})();(function() {var $ = AUI.$;var _ = AUI._;
+	if (!Liferay.Data.LFR_PORTAL_TOOLTIP) {
+		var triggerShowEvent = ['mouseenter', 'MSPointerDown', 'touchstart'];
+		if (A.UA.ios) {
+			triggerShowEvent = ['touchstart'];
+		}
+		Liferay.Data.LFR_PORTAL_TOOLTIP = new A.TooltipDelegate(
+			{
+				constrain: true,
+				opacity: 1,
+				trigger: '.lfr-portal-tooltip',
+				triggerHideEvent: ['click', 'mouseleave', 'MSPointerUp', 'touchend'],
+				triggerShowEvent: triggerShowEvent,
+				visible: false,
+				zIndex: Liferay.zIndex.TOOLTIP
+			}
+		);
+		Liferay.on(
+			'beforeNavigate',
+			function(event) {
+				Liferay.Data.LFR_PORTAL_TOOLTIP.getTooltip().hide();
+			}
+		);
+	}
+})();(function() {var $ = AUI.$;var _ = AUI._;
+	new Liferay.Menu();
+	var liferayNotices = Liferay.Data.notices;
+	for (var i = 1; i < liferayNotices.length; i++) {
+		new Liferay.Notice(liferayNotices[i]);
+	}
+
+})();(function() {var $ = AUI.$;var _ = AUI._;
+			Liferay.Session = new Liferay.SessionBase(
+				{
+					autoExtend: true,
+					redirectOnExpire: false,
+					redirectUrl: 'https\x3a\x2f\x2fwww\x2entnu\x2eedu\x2fweb\x2fguest',
+					sessionLength: 900,
+					sessionTimeoutOffset: 70,
+					warningLength: 0
+				}
+			);
+		
+		})();});
+// ]]>
+</script>
+<script src="https://www.ntnu.edu/o/ntnu-theme/js/main.js?browserId=other&amp;minifierType=js&amp;languageId=en_GB&amp;b=7110&amp;t=1732720022000" type="text/javascript"></script>
+<script type="text/javascript">
+	// <![CDATA[
+		AUI().use(
+			'aui-base',
+			function(A) {
+				var frameElement = window.frameElement;
+				if (frameElement && frameElement.getAttribute('id') === 'simulationDeviceIframe') {
+					A.getBody().addClass('lfr-has-simulation-panel');
+				}
+			}
+		);
+	// ]]>
+</script>
+<script>
+// siteimprüve analytics
+(function() {
+    var sz = document.createElement("script");
+    sz.type = "text/javascript";
+    sz.async = true;
+    sz.src = "//siteimproveanalytics.com/js/siteanalyze_6000120.js";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(sz, s);
+})();
+</script>
+		<!-- include other additonal libs --->
+		<script src="https://www.ntnu.edu/o/ntnu-theme/js/jquery.tablesorter.js" > </script>
+		<script src="https://www.ntnu.edu/o/ntnu-theme/js/jquery.slider.js?v=4.2.17" > </script>
+	</body>
+</html>
+
