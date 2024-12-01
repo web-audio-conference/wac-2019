@@ -20,30 +20,18 @@
 			content="Venues and Maps for the 5th Annual Web Audio Conference at the Norwegian Science and Technology University (NTNU) in Trondheim, Norway"
 			lang="en-GB" name="description" />
 		<script data-senna-track="permanent"
-			src="https://www.ntnu.edu/o/frontend-js-lodash-web/lodash/lodash.js"
+			src="../utils/lodash/lodash.js"
 			type="text/javascript"></script>
 		<script data-senna-track="permanent"
-			src="https://www.ntnu.edu/o/frontend-js-lodash-web/lodash/util.js"
+			src="../utils/lodash/util.js"
 			type="text/javascript"></script>
 		<link href="https://www.ntnu.edu/o/ntnu-theme/images/logoicon.ico"
 			rel="icon" />
-
-		<link data-senna-track="temporary"
-			href="https://www.ntnu.edu/nb/web/wac2019/venues" hreflang="nb-NO"
-			rel="alternate" />
-
-		<link data-senna-track="temporary"
-			href="https://www.ntnu.edu/web/wac2019/venues" hreflang="x-default"
-			rel="alternate" />
-
-		<link data-senna-track="temporary"
-			href="https://www.ntnu.edu/web/wac2019/venues" hreflang="en-GB"
-			rel="alternate" />
 		<link class="lfr-css-file" data-senna-track="temporary"
-			href="https://www.ntnu.edu/o/ntnu-theme/css/clay.css?browserId=other&amp;themeId=ntnutheme_WAR_ntnutheme&amp;minifierType=css&amp;languageId=en_GB&amp;b=7110&amp;t=1732720022000"
+			href="../utils/css/clay.css?browserId=other&amp;themeId=ntnutheme_WAR_ntnutheme&amp;minifierType=css&amp;languageId=en_GB&amp;b=7110&amp;t=1732720022000"
 			id="liferayAUICSS" rel="stylesheet" type="text/css" />
 		<link data-senna-track="temporary"
-			href="https://www.ntnu.edu/o/frontend-css-web/main.css?browserId=other&amp;themeId=ntnutheme_WAR_ntnutheme&amp;minifierType=css&amp;languageId=en_GB&amp;b=7110&amp;t=1732723538064"
+			href="../utils/css/ntnu-theme.css?browserId=other&amp;themeId=ntnutheme_WAR_ntnutheme&amp;minifierType=css&amp;languageId=en_GB&amp;b=7110&amp;t=1732723538064"
 			id="liferayPortalCSS" rel="stylesheet" type="text/css" />
 		<link data-senna-track="temporary"
 			href="https://www.ntnu.edu/combo?browserId=other&amp;minifierType=&amp;themeId=ntnutheme_WAR_ntnutheme&amp;languageId=en_GB&amp;b=7110&amp;com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_oVlh2NTrcXpR:%2Fcss%2Fmain.css&amp;com_liferay_product_navigation_product_menu_web_portlet_ProductMenuPortlet:%2Fcss%2Fmain.css&amp;com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet:%2Fcss%2Fmain.css&amp;t=1732720022000"
@@ -151,10 +139,10 @@
 					return '/group/wac2019/~/control_panel/manage';
 				},
 				getLayoutRelativeURL: function() {
-					return '/web/wac2019/venues';
+					return '../venues';
 				},
 				getLayoutURL: function() {
-					return 'https://www.ntnu.edu/web/wac2019/venues';
+					return '../venues';
 				},
 				getParentLayoutId: function() {
 					return '66';
@@ -174,7 +162,7 @@
 			},
 			getCanonicalURL: function() {
 			
-				return 'https\x3a\x2f\x2fwww\x2entnu\x2eedu\x2fweb\x2fwac2019\x2fvenues';
+				return '../venues';
 			},
 			getCDNBaseURL: function() {
 				return 'https://www.ntnu.edu';
@@ -363,7 +351,7 @@
 </script>
 
 		<link class="lfr-css-file" data-senna-track="temporary"
-			href="https://www.ntnu.edu/o/ntnu-theme/css/main.css?browserId=other&amp;themeId=ntnutheme_WAR_ntnutheme&amp;minifierType=css&amp;languageId=en_GB&amp;b=7110&amp;t=1732720022000"
+			href="../utils/css/ntnu-theme.css?browserId=other&amp;themeId=ntnutheme_WAR_ntnutheme&amp;minifierType=css&amp;languageId=en_GB&amp;b=7110&amp;t=1732720022000"
 			id="liferayThemeCSS" rel="stylesheet" type="text/css" />
 		<style data-senna-track="temporary" type="text/css">
 		.minimal img.customerLogo {
@@ -1351,25 +1339,7 @@ AUI().use('liferay-navigation-interaction', function(A) {(function() {var $ = AU
 			refreshURLData: {}
 		}
 	);
-Liferay.Loader.require('clay-tooltip/src/ClayTooltip', function(clayTooltipSrcClayTooltip) {
-(function(){
-var ClayTooltip = clayTooltipSrcClayTooltip;
-(function() {var $ = AUI.$;var _ = AUI._;
-	if (!Liferay.Data.LFR_PORTAL_CLAY_TOOLTIP) {
-		Liferay.Data.LFR_PORTAL_CLAY_TOOLTIP = ClayTooltip.default.init(
-			{
-				selectors: [
-					'.management-bar [data-title]:not(.lfr-portal-tooltip)',
-					'.management-bar [title]:not(.lfr-portal-tooltip)'
-				]
-			}
-		);
-	}
-})();})();
-},
-function(error) {
-console.error(error);
-});AUI().use('aui-tooltip', 'liferay-menu', 'liferay-notice', 'aui-base', 'liferay-navigation-interaction', 'liferay-session', 'liferay-poller', function(A) {(function() {var $ = AUI.$;var _ = AUI._;	var navigation = A.one('#navigationCollapse');
+AUI().use('aui-tooltip', 'liferay-menu', 'liferay-notice', 'aui-base', 'liferay-navigation-interaction', 'liferay-session', 'liferay-poller', function(A) {(function() {var $ = AUI.$;var _ = AUI._;	var navigation = A.one('#navigationCollapse');
 	if (navigation) {
 		navigation.plug(Liferay.NavigationInteraction);
 	}
@@ -1457,14 +1427,6 @@ console.error(error);
 </script>
 			<script>
 // siteimprüve analytics
-(function() {
-    var sz = document.createElement("script");
-    sz.type = "text/javascript";
-    sz.async = true;
-    sz.src = "//siteimproveanalytics.com/js/siteanalyze_6000120.js";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(sz, s);
-})();
 </script>
 			<!-- include other additonal libs --->
 			<script
